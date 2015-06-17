@@ -1,0 +1,1026 @@
+/* line 3, ../sass/main2.scss */
+.border-r {
+  display: inline-block;
+  font-size: 12px;
+  height: 28px;
+  padding: 3px 7px;
+  line-height: 28px;
+  color: #9c9c9c;
+  border: 1px solid #a0a0a0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align: middle;
+  width: 130px;
+}
+
+/* line 21, ../sass/main2.scss */
+.button-style {
+  font-size: 14px;
+  height: 28px;
+  padding: 3px 7px;
+  border: 1px solid #a0a0a0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #888888;
+  background: #fff;
+  width: 40px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* line 38, ../sass/main2.scss */
+.cancel {
+  width: 80px;
+}
+
+/* line 42, ../sass/main2.scss */
+.set-submit {
+  color: #fff;
+  background: #41abf5;
+  width: 80px;
+  border: 1px solid #41abf5;
+}
+
+/* line 49, ../sass/main2.scss */
+.file-box {
+  color: #fff;
+  background: #41abf5;
+  width: auto;
+  padding: 7px;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #41abf5;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+/* line 61, ../sass/main2.scss */
+.file-box-text {
+  color: #000000;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 67, ../sass/main2.scss */
+.input-file {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+/* line 79, ../sass/main2.scss */
+.release-button {
+  color: #fff;
+  background: #43bb00;
+  width: 80px;
+  border: 1px solid #43bb00;
+}
+
+/* line 85, ../sass/main2.scss */
+.submit-button {
+  color: #fff;
+  border: 1px solid #41abf5;
+  background: #41abf5;
+}
+
+/* line 91, ../sass/main2.scss */
+.declare {
+  color: #888888;
+}
+
+/* line 95, ../sass/main2.scss */
+.p-word {
+  font-size: 12px;
+  color: #888888;
+}
+
+/* line 100, ../sass/main2.scss */
+.td-top {
+  vertical-align: top;
+}
+
+/* line 104, ../sass/main2.scss */
+.td-middle {
+  vertical-align: middle;
+}
+
+/* line 108, ../sass/main2.scss */
+.check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+/* line 122, ../sass/main2.scss */
+.current.check {
+  border: 1px solid transparent;
+  background: url("../images/icon/checkbox-icon.png") no-repeat center;
+}
+
+/* line 126, ../sass/main2.scss */
+.checkbox {
+  display: none;
+}
+
+/*release-product ----------*/
+/* line 138, ../sass/main2.scss */
+.release-product-wrap {
+  padding-left: 45px;
+}
+
+/* line 146, ../sass/main2.scss */
+.release-product-wrap ul li {
+  padding-bottom: 25px;
+}
+
+/* line 150, ../sass/main2.scss */
+.release-title {
+  font-size: 16px;
+}
+
+/* line 154, ../sass/main2.scss */
+.release-con {
+  padding-left: 60px;
+  font-size: 14px;
+}
+
+/* line 159, ../sass/main2.scss */
+.release-table td {
+  padding: 10px;
+  position: relative;
+}
+
+/* line 163, ../sass/main2.scss */
+.release-table .td-title {
+  width: 85px;
+  text-align: right;
+  padding: 10px 0;
+  line-height: 28px;
+}
+
+/* line 169, ../sass/main2.scss */
+.red {
+  color: #e60012;
+}
+
+/* line 173, ../sass/main2.scss */
+.range-radio {
+  display: none;
+}
+
+/* line 176, ../sass/main2.scss */
+.radio-style {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon/radio-icon.png") no-repeat center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* line 185, ../sass/main2.scss */
+.radio-choose.radio-style {
+  background: url("../images/icon/radio-icon-ch.png") no-repeat center;
+}
+
+/* line 190, ../sass/main2.scss */
+.product-title {
+  width: 400px;
+}
+
+/* line 194, ../sass/main2.scss */
+.importing-link {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+
+/* line 199, ../sass/main2.scss */
+.importing-form-wrap {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  margin-left: -150px;
+  width: 300px;
+  padding: 8px 0 5px;
+  background: url("../images/importing-form-bg.png") no-repeat top center;
+  z-index: 99;
+}
+
+/* line 210, ../sass/main2.scss */
+.importing-open .importing-form-wrap {
+  display: block;
+}
+
+/* line 213, ../sass/main2.scss */
+.importing-form {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+/* line 219, ../sass/main2.scss */
+.importing-text {
+  width: 190px;
+  margin-left: 9px;
+  border: 1px solid #41abf5;
+}
+
+/* line 225, ../sass/main2.scss */
+.product-price {
+  width: 130px;
+  padding-left: 30px;
+}
+
+/* line 230, ../sass/main2.scss */
+.price-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid #a0a0a0;
+  display: inline-block;
+  height: 28px;
+  width: 25px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #e5e5e5;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  box-sizing: border-box;
+}
+
+/* line 248, ../sass/main2.scss */
+.add-images {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* line 255, ../sass/main2.scss */
+.add-images img {
+  width: 100%;
+}
+
+/* line 259, ../sass/main2.scss */
+.add-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../images/icon/add-icon.png") no-repeat center;
+}
+
+/* line 266, ../sass/main2.scss */
+.add-parameter {
+  padding: 0;
+  background-color: transparent;
+  color: #3f3f3f;
+}
+
+/* line 273, ../sass/main2.scss */
+.parameter-class {
+  width: 546px;
+  display: none;
+}
+
+/* line 278, ../sass/main2.scss */
+.parameter-open .parameter-class {
+  display: block;
+}
+
+/* line 282, ../sass/main2.scss */
+.parameter-open .add-parameter {
+  display: none;
+}
+
+/* line 286, ../sass/main2.scss */
+.parameter-open .parameter-middle .add-parameter {
+  display: block;
+}
+
+/* line 290, ../sass/main2.scss */
+.color-class {
+  font-size: 14px;
+  padding: 15px;
+  border: 1px dashed #a0a0a0;
+  position: relative;
+}
+
+/* line 296, ../sass/main2.scss */
+.close-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background: url("../images/icon/close-icon.png") no-repeat center;
+  cursor: pointer;
+}
+
+/* line 306, ../sass/main2.scss */
+.color-table {
+  padding-top: 10px;
+}
+
+/* line 309, ../sass/main2.scss */
+.color-table td {
+  padding: 5px 0;
+  width: 135px;
+  text-align: left;
+}
+
+/* line 317, ../sass/main2.scss */
+.color-name {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 322, ../sass/main2.scss */
+.color-icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-color: #764a26;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* line 330, ../sass/main2.scss */
+.color-icon img {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 340, ../sass/main2.scss */
+.parameter-middle {
+  padding: 10px 0;
+}
+
+/* line 343, ../sass/main2.scss */
+.parameter-link {
+  margin-left: 20px;
+}
+
+/* line 350, ../sass/main2.scss */
+.size-class th {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 354, ../sass/main2.scss */
+.size-class td {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 361, ../sass/main2.scss */
+.size-table {
+  border: 1px solid #a0a0a0;
+}
+
+/* line 364, ../sass/main2.scss */
+.level-one {
+  width: 100%;
+}
+
+/* line 367, ../sass/main2.scss */
+.level-one th {
+  height: 35px;
+}
+
+/* line 370, ../sass/main2.scss */
+.level-one tbody tr {
+  border-top: 1px solid #a0a0a0;
+}
+
+/* line 373, ../sass/main2.scss */
+.level-one tbody .border-first {
+  border-top: none;
+}
+
+/* line 377, ../sass/main2.scss */
+.level-one th th {
+  border-left: 1px solid #a0a0a0;
+}
+
+/* line 380, ../sass/main2.scss */
+.size-s {
+  width: 60px;
+}
+
+/* line 383, ../sass/main2.scss */
+.size-b {
+  width: 120px;
+}
+
+/* line 386, ../sass/main2.scss */
+.th-input {
+  background: transparent;
+  border: 1px solid #a0a0a0;
+  display: inline-block;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 3px 7px;
+  width: 65px;
+  vertical-align: middle;
+  outline: none;
+}
+
+/* line 400, ../sass/main2.scss */
+.level-two {
+  border-left: 1px solid #a0a0a0;
+}
+
+/* line 403, ../sass/main2.scss */
+.level-three td {
+  height: 35px;
+}
+
+/* line 407, ../sass/main2.scss */
+.level-three .th-input {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 412, ../sass/main2.scss */
+.level-three td {
+  border-left: 1px solid #a0a0a0;
+}
+
+/* line 416, ../sass/main2.scss */
+.detail-button {
+  color: #3f3f3f;
+  width: auto;
+  padding: 0  8px  0 26px;
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url("../images/icon/detail-button-icon.png") no-repeat 0 0;
+}
+
+/* line 431, ../sass/main2.scss */
+.detail-button:hover {
+  background: url("../images/icon/detail-button-icon-h.png") no-repeat;
+  color: #56abe4;
+  border: 1px solid #56abe4;
+}
+
+/* line 437, ../sass/main2.scss */
+.detail-button.detail-b-open {
+  background-position: 0 -78px;
+}
+
+/* line 441, ../sass/main2.scss */
+.detail-button.detail-b-screen {
+  background-position: 0 -52px;
+}
+
+/* line 446, ../sass/main2.scss */
+.detail-button.detail-b-img {
+  background-position: 0 -26px;
+}
+
+/* line 450, ../sass/main2.scss */
+.detail-text-open .detail-b-open {
+  background: url("../images/icon/detail-button-icon-op.png") no-repeat 0 -78px;
+}
+
+/* line 453, ../sass/main2.scss */
+.detail-text-open .detail-b-open:hover {
+  background: url("../images/icon/detail-button-icon-op-h.png") no-repeat 0 -78px;
+}
+
+/* line 457, ../sass/main2.scss */
+.new-freight-template {
+  margin-left: 20px;
+}
+
+/* line 461, ../sass/main2.scss */
+.stock-faq {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon/faq-icon.png") no-repeat center;
+  margin-left: 20px;
+}
+
+/* line 468, ../sass/main2.scss */
+.stock-faq:hover {
+  background: url("../images/icon/faq-icon-h.png") no-repeat center;
+}
+
+/* line 471, ../sass/main2.scss */
+.td-item {
+  height: 28px;
+  line-height: 28px;
+}
+
+/* line 475, ../sass/main2.scss */
+.set-time-select {
+  margin-left: 20px;
+}
+
+/*release-producte end ----------*/
+/*product-list -----*/
+/* line 483, ../sass/main2.scss */
+.product-list-table {
+  margin: 30px 0;
+}
+
+/*product-list end-----*/
+/*common-table ----------*/
+/* line 493, ../sass/main2.scss */
+.table-item01 {
+  width: 285px;
+}
+
+/* line 496, ../sass/main2.scss */
+.table-item02 {
+  width: 70px;
+}
+
+/* line 499, ../sass/main2.scss */
+.table-item03 {
+  width: 100px;
+}
+
+/* line 502, ../sass/main2.scss */
+.table-item04 {
+  width: 50px;
+}
+
+/* line 505, ../sass/main2.scss */
+.table-item05 {
+  width: 50px;
+}
+
+/* line 508, ../sass/main2.scss */
+.table-item06 {
+  width: 85px;
+}
+
+/* line 511, ../sass/main2.scss */
+.table-item07 {
+  width: 50px;
+}
+
+/* line 514, ../sass/main2.scss */
+.table-item08 {
+  width: 70px;
+}
+
+/* line 517, ../sass/main2.scss */
+.table-item09 {
+  width: 70px;
+}
+
+/* line 520, ../sass/main2.scss */
+.table-item10 {
+  width: 125px;
+}
+
+/* line 523, ../sass/main2.scss */
+.table-item11 {
+  width: 90px;
+}
+
+/* line 526, ../sass/main2.scss */
+.common-table {
+  font-size: 12px;
+}
+
+/* line 529, ../sass/main2.scss */
+.common-table thead tr {
+  height: 26px;
+  line-height: 26px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+/* line 534, ../sass/main2.scss */
+.common-table th {
+  text-align: center;
+}
+
+/* line 537, ../sass/main2.scss */
+.common-table td {
+  text-align: center;
+}
+
+/* line 540, ../sass/main2.scss */
+.common-table p {
+  line-height: 16px;
+}
+
+/* line 543, ../sass/main2.scss */
+.common-table .first-td-left {
+  text-align: left;
+}
+
+/* line 546, ../sass/main2.scss */
+.common-table .table-item01 {
+  text-align: left;
+}
+
+/* line 549, ../sass/main2.scss */
+.common-table tbody tr {
+  height: 90px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+/* line 553, ../sass/main2.scss */
+.common-table tbody tr:hover {
+  background-color: #e9dede;
+}
+
+/* line 557, ../sass/main2.scss */
+.t-img-link {
+  display: inline-block;
+  width: 60px;
+}
+
+/* line 562, ../sass/main2.scss */
+.t-img-link img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 567, ../sass/main2.scss */
+.td-word-wrap {
+  display: inline-block;
+  width: 185px;
+  margin-left: 5px;
+}
+
+/* line 573, ../sass/main2.scss */
+.td-t-link {
+  display: inline-block;
+  height: 48px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 580, ../sass/main2.scss */
+.td-code {
+  color: #888888;
+  line-height: 1;
+}
+
+/* line 584, ../sass/main2.scss */
+.now-price {
+  color: #ff7200;
+}
+
+/* line 587, ../sass/main2.scss */
+.online {
+  color: #43bb00;
+}
+
+/* line 591, ../sass/main2.scss */
+table .operation-link {
+  color: #41abf5;
+  margin: 0 5px;
+}
+
+/* line 598, ../sass/main2.scss */
+.active-p-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  margin: 3px;
+}
+
+/* line 611, ../sass/main2.scss */
+.active-rebate {
+  background-color: #c92727;
+}
+
+/* line 614, ../sass/main2.scss */
+.active-grab {
+  background-color: #e7a300;
+}
+
+/*common-table end----------*/
+/* line 619, ../sass/main2.scss */
+.product-warehouse .active-p-icon {
+  background-color: #898989;
+}
+
+/* line 622, ../sass/main2.scss */
+.product-warehouse .online {
+  color: #898989;
+}
+
+/*all-pop ----------*/
+/* line 628, ../sass/main2.scss */
+.all-pop {
+  font-size: 12px;
+  width: 680px;
+  height: 440px;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -340px;
+  margin-top: -220px;
+  display: none;
+}
+
+/* line 645, ../sass/main2.scss */
+.pop-open .all-pop {
+  display: block;
+}
+
+/* line 648, ../sass/main2.scss */
+.pop-title {
+  padding-left: 15px;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  border-bottom: 1px solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+/* line 656, ../sass/main2.scss */
+.p-close-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("../images/icon/p-close-icon.png") no-repeat center;
+  cursor: pointer;
+}
+
+/* line 666, ../sass/main2.scss */
+.pop-con {
+  padding: 20px;
+}
+
+/* line 670, ../sass/main2.scss */
+.pop-con-list-wrap {
+  height: 335px;
+  width: 640px;
+  overflow: hidden;
+}
+
+/* line 676, ../sass/main2.scss */
+.pop-con-list {
+  width: 664px;
+}
+
+/* line 679, ../sass/main2.scss */
+.pop-con-item {
+  width: 140px;
+  height: 60px;
+  border: 1px solid #4fa7ff;
+  position: relative;
+  float: left;
+  margin: 0 24px 20px 0;
+}
+
+/* line 688, ../sass/main2.scss */
+.pop-con-item-first {
+  border: 1px solid transparent;
+}
+
+/* line 693, ../sass/main2.scss */
+.pop-con-item-first .pop-con-link {
+  background: url("../images/icon/add-folder.png") no-repeat left center;
+}
+
+/* line 696, ../sass/main2.scss */
+.pop-con-item-first .pop-con-link span {
+  padding-top: 15px;
+}
+
+/* line 701, ../sass/main2.scss */
+.pop-con-link {
+  display: block;
+  height: 50px;
+  margin: 5px;
+  line-height: 16px;
+  padding-left: 65px;
+  background: url("../images/icon/folder-icon.png") no-repeat left center;
+  overflow: hidden;
+}
+
+/* line 710, ../sass/main2.scss */
+.pop-con-link span {
+  display: inline-block;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 716, ../sass/main2.scss */
+.folder-ch-icon {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon/folder-ch-icon.png") no-repeat center;
+  display: none;
+}
+
+/* line 726, ../sass/main2.scss */
+.pop-i-current .folder-ch-icon {
+  display: block;
+}
+
+/* line 730, ../sass/main2.scss */
+.pop-bottom {
+  text-align: right;
+}
+
+/*all-pop end----------*/
+/*product-folder-wrap*/
+/* line 737, ../sass/main2.scss */
+.product-folder-wrap {
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+/* line 741, ../sass/main2.scss */
+.product-folder-list {
+  width: 1059px;
+}
+
+/* line 745, ../sass/main2.scss */
+.product-folder-item {
+  width: 160px;
+  height: 200px;
+  border: 1px solid #a0a0a0;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 14.5px;
+}
+
+/* line 754, ../sass/main2.scss */
+.current.product-folder-item {
+  border: 1px solid #4fa7ff;
+}
+
+/* line 758, ../sass/main2.scss */
+.p-folder-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 763, ../sass/main2.scss */
+.p-folder-word {
+  padding-top: 11px;
+  text-align: center;
+}
+
+/* line 767, ../sass/main2.scss */
+.p-folder-word span {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/*product-folder-wrap-end-------*/
+/*bulk-upload*/
+/* line 780, ../sass/main2.scss */
+.bulk-upload .o-title {
+  margin-bottom: 25px;
+}
+/* line 786, ../sass/main2.scss */
+.bulk-upload .border-r {
+  width: 90px;
+}
+/* line 789, ../sass/main2.scss */
+.bulk-upload .form-group {
+  margin: 0px 0 25px;
+}
+
+/*bulk-upload -end---*/
+/*product-standard -----*/
+/* line 802, ../sass/main2.scss */
+.title-prompt {
+  background-color: #d4e8f5;
+  border: 1px dashed #8ccaf6;
+  color: #666666;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 15px;
+  font-size: 12px;
+}
+
+/* line 814, ../sass/main2.scss */
+.product-standard-table {
+  margin: 25px 0;
+}
+/* line 816, ../sass/main2.scss */
+.product-standard-table table {
+  border: 1px solid #a0a0a0;
+}
+/* line 819, ../sass/main2.scss */
+.product-standard-table th {
+  text-align: center;
+  line-height: 40px;
+  border-left: 1px solid #a0a0a0;
+}
+/* line 824, ../sass/main2.scss */
+.product-standard-table td {
+  line-height: 40px;
+  padding: 0 10px;
+  border-left: 1px solid #a0a0a0;
+}
+/* line 829, ../sass/main2.scss */
+.product-standard-table tbody tr {
+  border-top: 1px solid #a0a0a0;
+}
+/* line 832, ../sass/main2.scss */
+.product-standard-table .block1 {
+  width: 110px;
+  text-align: center;
+}
+/* line 836, ../sass/main2.scss */
+.product-standard-table .block2 {
+  width: 715px;
+}
+/* line 840, ../sass/main2.scss */
+.product-standard-table .btn-group {
+  margin-right: 5px;
+}
+/* line 842, ../sass/main2.scss */
+.product-standard-table .btn-group .btn {
+  padding: 3px 7px;
+}
+/* line 847, ../sass/main2.scss */
+.product-standard-table .btn-default {
+  background: transparent;
+  border-color: #a0a0a0;
+}
+/* line 851, ../sass/main2.scss */
+.product-standard-table .standard-text {
+  font-size: 12px;
+  width: 50px;
+  height: 28px;
+  padding: 5px 7px;
+  line-height: 28px;
+  color: #9c9c9c;
+  border: 1px solid #a0a0a0;
+  vertical-align: middle;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+/*product-standard end-----*/

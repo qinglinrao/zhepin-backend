@@ -1,0 +1,18 @@
+.search-bar {
+  .button {
+    font-size: 14px;
+    padding: 1px 15px;
+  }
+  .search-top {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    width: 250px;
+  }
+
+  .table > tbody > tr {
+    > th, > td {
+      border-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.action-bar {
+  margin: 10px 0;
+  overflow: hidden;
+
+  .action-bar-left {
+    float: left;
+  }
+
+  .action-bar-right {
+    float: right;
+  }
+
+  .pagination {
+    margin: 0;
+  }
+}

@@ -1,0 +1,1766 @@
+
+.component-navigator {
+
+    .nav-item{
+        float: left;
+        padding-bottom: 0.75em;
+        min-width: 25%;
+
+        .nav-item-img{
+            height: 2.25em;
+            margin: 0 auto;
+        }
+
+        .nav-item-name{
+            text-align: center;
+            height: 1em;
+            line-height: 1em;
+            overflow: hidden;
+            position: relative;
+            span{
+                font-size: 0.6em;
+            }
+        }
+    }
+    @for $i from 1 through 4{
+        &.theme-#{$i}{
+            .nav-item{
+                .nav-item-img{
+                    &.shopping-cart{
+                        background: url('./images/shopping_cart_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.orders{
+                        background: url('./images/orders_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.categories{
+                        background: url('./images/categories_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.cod{
+                        background: url('./images/cod_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.collect{
+                        background: url('./images/collect_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.deliver{
+                        background: url('./images/deliver_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.guarantee{
+                        background: url('./images/guarantee_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.maintain{
+                        background: url('./images/maintain_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.postage{
+                        background: url('./images/postage_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.profile{
+                        background: url('./images/profile_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.returns{
+                        background: url('./images/returns_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                    &.service{
+                        background: url('./images/service_#{$i}.png') center center no-repeat;
+                        background-size: 2em 2em;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+/*
+* ==== edit form====
+*/
+#component-navigator-form{
+    .sortable-field li {
+        padding: 5px;
+        border: 2px solid transparent;
+        position: relative;
+        &:hover{
+            border-color: #30cab2;
+        }
+        .toggle-visible {
+            float: right;
+            margin-right: 50px;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            background: #7f7f7f;
+            padding: 0 5px;
+            cursor: pointer;
+            &.visible{
+                background-color: #30cab2
+            }
+            .name-field{
+                border: 1px solid #cecccd;
+                padding: 0 10px;
+            }
+
+        }
+    }
+
+    .theme-image{
+        width:320px;
+        height: 72px;
+
+        @for $i from 1 through 4{
+            &.theme-#{$i}{
+                background: url('/marionette/js/components/navigator/images/theme_#{$i}.png') left top / 320px no-repeat;
+            }
+        }
+    }
+}
+
+/*
+*==== cute style ====
+*/
+
+
+.cute-01{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute01/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute01/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute01/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute01/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute01/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute01/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute01/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute01/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute01/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute01/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute01/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute01/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute01 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute01/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-02{
+
+   .component-navigator {
+
+     @for $i from 1 through 4{
+       &.theme-#{$i}{
+         .nav-item{
+           .nav-item-img{
+             &.shopping-cart{
+               background: url('./images/cute02/shopping_cart_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.orders{
+               background: url('./images/cute02/orders_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.categories{
+               background: url('./images/cute02/categories_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.cod{
+               background: url('./images/cute02/cod_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.collect{
+               background: url('./images/cute02/collect_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.deliver{
+               background: url('./images/cute02/deliver_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.guarantee{
+               background: url('./images/cute02/guarantee_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.maintain{
+               background: url('./images/cute02/maintain_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.postage{
+               background: url('./images/cute02/postage_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.profile{
+               background: url('./images/cute02/profile_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.returns{
+               background: url('./images/cute02/returns_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+             &.service{
+               background: url('./images/cute02/service_#{$i}.png') center center no-repeat;
+               background-size: 2em 2em;
+             }
+           }
+         }
+       }
+     }
+
+   }
+
+   /*
+   * ==== cute02 edit form====
+   */
+   #component-navigator-form{
+
+     .theme-image{
+
+       @for $i from 1 through 4{
+         &.theme-#{$i}{
+           background: url('/marionette/js/components/navigator/images/cute02/theme_#{$i}.png') left top / 320px no-repeat;
+         }
+       }
+     }
+   }
+
+ }
+
+.cute-03{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute03/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute03/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute03/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute03/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute03/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute03/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute03/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute03/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute03/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute03/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute03/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute03/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute03 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute03/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-04{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute04/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute04/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute04/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute04/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute04/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute04/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute04/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute04/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute04/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute04/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute04/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute04/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute04 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute04/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-05{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute05/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute05/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute05/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute05/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute05/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute05/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute05/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute05/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute05/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute05/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute05/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute05/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute05 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute05/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-06{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute06/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute06/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute06/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute06/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute06/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute06/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute06/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute06/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute06/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute06/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute06/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute06/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute06 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute06/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-07{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute07/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute07/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute07/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute07/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute07/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute07/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute07/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute07/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute07/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute07/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute07/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute07/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute07 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute07/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-08{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute08/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute08/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute08/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute08/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute08/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute08/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute08/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute08/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute08/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute08/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute08/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute08/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute08 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute08/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-09{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute09/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute09/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute09/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute09/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute09/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute09/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute09/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute09/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute09/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute09/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute09/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute09/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute09 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute09/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-10{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/cute10/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/cute10/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/cute10/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/cute10/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/cute10/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/cute10/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/cute10/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/cute10/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/cute10/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/cute10/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/cute10/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/cute10/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== cute10 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/cute10/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*
+*==== cute style end====
+*/
+
+
+/*
+*==== fresh style ====
+*/
+
+
+.fresh-01{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh01/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh01/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh01/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh01/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh01/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh01/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh01/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh01/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh01/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh01/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh01/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh01/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh01 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh01/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-02{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh02/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh02/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh02/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh02/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh02/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh02/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh02/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh02/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh02/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh02/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh02/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh02/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh02 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh02/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-03{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh03/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh03/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh03/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh03/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh03/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh03/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh03/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh03/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh03/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh03/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh03/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh03/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh03 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh03/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-04{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh04/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh04/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh04/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh04/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh04/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh04/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh04/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh04/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh04/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh04/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh04/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh04/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh04 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh04/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-05{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh05/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh05/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh05/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh05/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh05/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh05/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh05/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh05/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh05/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh05/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh05/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh05/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh05 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh05/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-06{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh06/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh06/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh06/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh06/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh06/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh06/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh06/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh06/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh06/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh06/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh06/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh06/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh06 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh06/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-07{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh07/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh07/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh07/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh07/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh07/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh07/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh07/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh07/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh07/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh07/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh07/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh07/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh07 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh07/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-08{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh08/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh08/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh08/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh08/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh08/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh08/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh08/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh08/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh08/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh08/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh08/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh08/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh08 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh08/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-09{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh09/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh09/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh09/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh09/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh09/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh09/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh09/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh09/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh09/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh09/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh09/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh09/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh09 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh09/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-10{
+
+  .component-navigator {
+
+    @for $i from 1 through 4{
+      &.theme-#{$i}{
+        .nav-item{
+          .nav-item-img{
+            &.shopping-cart{
+              background: url('./images/fresh10/shopping_cart_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.orders{
+              background: url('./images/fresh10/orders_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.categories{
+              background: url('./images/fresh10/categories_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.cod{
+              background: url('./images/fresh10/cod_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.collect{
+              background: url('./images/fresh10/collect_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.deliver{
+              background: url('./images/fresh10/deliver_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.guarantee{
+              background: url('./images/fresh10/guarantee_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.maintain{
+              background: url('./images/fresh10/maintain_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.postage{
+              background: url('./images/fresh10/postage_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.profile{
+              background: url('./images/fresh10/profile_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.returns{
+              background: url('./images/fresh10/returns_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+            &.service{
+              background: url('./images/fresh10/service_#{$i}.png') center center no-repeat;
+              background-size: 2em 2em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*
+  * ==== fresh10 edit form====
+  */
+  #component-navigator-form{
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/navigator/images/fresh10/theme_#{$i}.png') left top / 320px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*
+*==== fresh style end====
+*/
+
+
+
+
+
+
+
+

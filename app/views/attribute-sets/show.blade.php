@@ -1,0 +1,1 @@
+/Users/gibson/works/mcmore/laravel/backend/app/views/attribute_sets/show.blade.php

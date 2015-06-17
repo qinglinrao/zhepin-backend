@@ -1,0 +1,850 @@
+.component-product.has-border {
+  border: 1px solid #ccbaae;
+  border-radius: 0.4em;
+  overflow: hidden; }
+  .component-product.has-border.tpl_1 {
+    border: none; }
+  .component-product.has-border.tpl_2 .product:last-child {
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em; }
+.component-product .component-title {
+  color: #634932;
+  height: 1em;
+  line-height: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em; }
+  .component-product .component-title > span {
+    font-size: 0.9em; }
+  .component-product .component-title.title-theme-2 {
+    border-left: 0.2em solid #46939c; }
+.component-product.tpl_1 .product {
+  width: 7.25em;
+  float: left;
+  margin-bottom: 0.5em;
+  background-color: #fff;
+  margin-left: 0.5em; }
+  .component-product.tpl_1 .product .prod-img {
+    width: 100%;
+    height: 7.25em;
+    background: #ccc;
+    margin-bottom: 0.25em; }
+  .component-product.tpl_1 .product .prod-name {
+    color: #63492f;
+    height: 40px;
+    line-height: 20px;
+    padding: 0 0.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative; }
+    .component-product.tpl_1 .product .prod-name span {
+      font-size: 0.6em;
+      display: block; }
+  .component-product.tpl_1 .product .prod-saleprice {
+    color: #8f3523;
+    float: left;
+    height: 1em;
+    line-height: 0.75em;
+    padding: 0 0.25em; }
+    .component-product.tpl_1 .product .prod-saleprice span {
+      font-size: 0.6em; }
+  .component-product.tpl_1 .product .prod-parprice {
+    color: #8f3523;
+    padding: 0 0.25em; }
+    .component-product.tpl_1 .product .prod-parprice span {
+      font-size: 0.6em; }
+  .component-product.tpl_1 .product .prod-sale {
+    color: #888;
+    float: right;
+    height: 1em;
+    line-height: 0.75em;
+    padding: 0 0.25em; }
+    .component-product.tpl_1 .product .prod-sale span {
+      font-size: 0.6em; }
+.component-product.tpl_1.has-border .product {
+  border: 1px solid #ccbaae; }
+  .component-product.tpl_1.has-border .product.last {
+    margin-bottom: 0px; }
+.component-product.tpl_1.theme-2 .product .prod-img {
+  background: #30cab2; }
+.component-product.tpl_2 {
+  background: #fff;
+  width: 15em;
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+  .component-product.tpl_2 .component-title {
+    margin-bottom: 0; }
+  .component-product.tpl_2 .product {
+    border-bottom: 1px solid transparent;
+    background-color: #fff;
+    border-bottom: 1px solid #ccbaae; }
+    .component-product.tpl_2 .product:last-child {
+      border-bottom: 0; }
+    .component-product.tpl_2 .product:first-child {
+      padding-top: 0; }
+    .component-product.tpl_2 .product .prod-img {
+      float: left;
+      width: 5em;
+      height: 5em;
+      background: #ccc;
+      margin: 0.25em; }
+    .component-product.tpl_2 .product .prod-name {
+      color: #63492f;
+      float: left;
+      width: 8.25em;
+      height: 50px;
+      line-height: 17px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      margin-top: 0.5em; }
+      .component-product.tpl_2 .product .prod-name span {
+        font-size: 0.75em;
+        display: block; }
+    .component-product.tpl_2 .product .prod-parprice {
+      color: #c5c4c4;
+      padding-top: 0.25em;
+      text-decoration: line-through;
+      width: 8.25em;
+      float: left;
+      line-height: 1em; }
+      .component-product.tpl_2 .product .prod-parprice span {
+        font-size: 0.7em; }
+    .component-product.tpl_2 .product .prod-saleprice {
+      color: #8f3523;
+      float: left;
+      width: 8.25em;
+      line-height: 1em; }
+      .component-product.tpl_2 .product .prod-saleprice span {
+        font-size: 1em; }
+  .component-product.tpl_2.theme-2 .product .prod-img {
+    background: #30cab2; }
+
+/*
+*==== cute style ====
+*/
+.cute-01 .component-product.has-border {
+  border-color: #cacaca; }
+.cute-01 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-01 .component-product .component-title.title-theme-2 {
+    border-color: #f84f92; }
+.cute-01 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-01 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-01 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-01 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fc316c; }
+  .cute-01 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-01 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-01 .component-product.tpl_1.has-border .product {
+  border-color: #cacaca; }
+.cute-01 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-01 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #cacaca; }
+    .cute-01 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-01 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-01 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-01 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fc316c; }
+
+.cute-02 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-02 .component-product .component-title {
+  color: #d2718a; }
+  .cute-02 .component-product .component-title.title-theme-2 {
+    border-color: #d2718a; }
+.cute-02 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-02 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-02 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-02 .component-product.tpl_1 .product .prod-saleprice {
+    color: #ea9d9c; }
+  .cute-02 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-02 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-02 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-02 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-02 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-02 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-02 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-02 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-02 .component-product.tpl_2 .product .prod-saleprice {
+      color: #ea9d9c; }
+
+.cute-03 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-03 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-03 .component-product .component-title.title-theme-2 {
+    border-color: #ff74ab; }
+.cute-03 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-03 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-03 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-03 .component-product.tpl_1 .product .prod-saleprice {
+    color: #ff75ac; }
+  .cute-03 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-03 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-03 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-03 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-03 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-03 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-03 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-03 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-03 .component-product.tpl_2 .product .prod-saleprice {
+      color: #ff75ac; }
+
+.cute-04 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-04 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-04 .component-product .component-title.title-theme-2 {
+    border-color: #96c7c7; }
+.cute-04 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-04 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-04 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-04 .component-product.tpl_1 .product .prod-saleprice {
+    color: #d8633b; }
+  .cute-04 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-04 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-04 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-04 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-04 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-04 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-04 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-04 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-04 .component-product.tpl_2 .product .prod-saleprice {
+      color: #d8633b; }
+
+.cute-05 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-05 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-05 .component-product .component-title.title-theme-2 {
+    border-color: #ffaa89; }
+.cute-05 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-05 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-05 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-05 .component-product.tpl_1 .product .prod-saleprice {
+    color: #ff6766; }
+  .cute-05 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-05 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-05 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-05 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-05 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-05 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-05 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-05 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-05 .component-product.tpl_2 .product .prod-saleprice {
+      color: #ff6766; }
+
+.cute-06 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-06 .component-product .component-title {
+  color: #937023; }
+  .cute-06 .component-product .component-title.title-theme-2 {
+    border-color: #937023; }
+.cute-06 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-06 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-06 .component-product.tpl_1 .product .prod-name {
+    color: #937023; }
+  .cute-06 .component-product.tpl_1 .product .prod-saleprice {
+    color: #df633b; }
+  .cute-06 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-06 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-06 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-06 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-06 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-06 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-06 .component-product.tpl_2 .product .prod-name {
+      color: #937023; }
+    .cute-06 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-06 .component-product.tpl_2 .product .prod-saleprice {
+      color: #df633b; }
+
+.cute-07 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-07 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-07 .component-product .component-title.title-theme-2 {
+    border-color: #b6d57b; }
+.cute-07 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-07 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-07 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-07 .component-product.tpl_1 .product .prod-saleprice {
+    color: #feaca2; }
+  .cute-07 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-07 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-07 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-07 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-07 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-07 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-07 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-07 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-07 .component-product.tpl_2 .product .prod-saleprice {
+      color: #feaca2; }
+
+.cute-08 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-08 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-08 .component-product .component-title.title-theme-2 {
+    border-color: #d48427; }
+.cute-08 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-08 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-08 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-08 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fe6e7e; }
+  .cute-08 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-08 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-08 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-08 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-08 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-08 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-08 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-08 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-08 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fe6e7e; }
+
+.cute-09 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-09 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-09 .component-product .component-title.title-theme-2 {
+    border-color: #e86c6c; }
+.cute-09 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-09 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-09 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-09 .component-product.tpl_1 .product .prod-saleprice {
+    color: #db0716; }
+  .cute-09 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-09 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-09 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-09 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-09 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-09 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-09 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-09 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-09 .component-product.tpl_2 .product .prod-saleprice {
+      color: #db0716; }
+
+.cute-10 .component-product.has-border {
+  border-color: #e8e8e8; }
+.cute-10 .component-product .component-title {
+  color: #3f3f3f; }
+  .cute-10 .component-product .component-title.title-theme-2 {
+    border-color: #a56afb; }
+.cute-10 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .cute-10 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .cute-10 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .cute-10 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fd4788; }
+  .cute-10 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .cute-10 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.cute-10 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.cute-10 .component-product.tpl_2 {
+  background: #fff; }
+  .cute-10 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .cute-10 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .cute-10 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .cute-10 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .cute-10 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fd4788; }
+
+/*
+*==== cute style end====
+*/
+/*
+*==== fresh style ====
+*/
+.fresh-01 .component-product.has-border {
+  border-color: #cccccc; }
+.fresh-01 .component-product .component-title {
+  color: #60b49d; }
+  .fresh-01 .component-product .component-title.title-theme-2 {
+    border-color: #60b49d; }
+.fresh-01 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-01 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-01 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-01 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fc766a; }
+  .fresh-01 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-01 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-01 .component-product.tpl_1.has-border .product {
+  border-color: #cccccc; }
+.fresh-01 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-01 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #cccccc; }
+    .fresh-01 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-01 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-01 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-01 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fc766a; }
+
+.fresh-02 .component-product.has-border {
+  border-color: #e8e8e8; }
+.fresh-02 .component-product .component-title {
+  color: #fb939a; }
+  .fresh-02 .component-product .component-title.title-theme-2 {
+    border-color: #fb939a; }
+.fresh-02 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-02 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-02 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-02 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fb937a; }
+  .fresh-02 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-02 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-02 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.fresh-02 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-02 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .fresh-02 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-02 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-02 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-02 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fb937a; }
+
+.fresh-03 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-03 .component-product .component-title {
+  color: #19989f; }
+  .fresh-03 .component-product .component-title.title-theme-2 {
+    border-color: #19989f; }
+.fresh-03 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-03 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-03 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-03 .component-product.tpl_1 .product .prod-saleprice {
+    color: #78c7ce; }
+  .fresh-03 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-03 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-03 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-03 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-03 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-03 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-03 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-03 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-03 .component-product.tpl_2 .product .prod-saleprice {
+      color: #78c7ce; }
+
+.fresh-04 .component-product.has-border {
+  border-color: #e8e8e8; }
+.fresh-04 .component-product .component-title {
+  color: #97c8d6; }
+  .fresh-04 .component-product .component-title.title-theme-2 {
+    border-color: #97c8d6; }
+.fresh-04 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-04 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-04 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-04 .component-product.tpl_1 .product .prod-saleprice {
+    color: #97c8d6; }
+  .fresh-04 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-04 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-04 .component-product.tpl_1.has-border .product {
+  border-color: #e8e8e8; }
+.fresh-04 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-04 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #e8e8e8; }
+    .fresh-04 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-04 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-04 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-04 .component-product.tpl_2 .product .prod-saleprice {
+      color: #97c8d6; }
+
+.fresh-05 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-05 .component-product .component-title {
+  color: #a3bacd; }
+  .fresh-05 .component-product .component-title.title-theme-2 {
+    border-color: #a3bacd; }
+.fresh-05 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-05 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-05 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-05 .component-product.tpl_1 .product .prod-saleprice {
+    color: #c2987d; }
+  .fresh-05 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-05 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-05 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-05 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-05 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-05 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-05 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-05 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-05 .component-product.tpl_2 .product .prod-saleprice {
+      color: #c2987d; }
+
+.fresh-06 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-06 .component-product .component-title {
+  color: #a7a5b6; }
+  .fresh-06 .component-product .component-title.title-theme-2 {
+    border-color: #a7a5b6; }
+.fresh-06 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-06 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-06 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-06 .component-product.tpl_1 .product .prod-saleprice {
+    color: #a3bacd; }
+  .fresh-06 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-06 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-06 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-06 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-06 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-06 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-06 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-06 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-06 .component-product.tpl_2 .product .prod-saleprice {
+      color: #a3bacd; }
+
+.fresh-07 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-07 .component-product .component-title {
+  color: #949494; }
+  .fresh-07 .component-product .component-title.title-theme-2 {
+    border-color: #949494; }
+.fresh-07 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-07 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-07 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-07 .component-product.tpl_1 .product .prod-saleprice {
+    color: #a7a5b6; }
+  .fresh-07 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-07 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-07 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-07 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-07 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-07 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-07 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-07 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-07 .component-product.tpl_2 .product .prod-saleprice {
+      color: #a7a5b6; }
+
+.fresh-08 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-08 .component-product .component-title {
+  color: #fa9090; }
+  .fresh-08 .component-product .component-title.title-theme-2 {
+    border-color: #fa9090; }
+.fresh-08 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-08 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-08 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-08 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fa9090; }
+  .fresh-08 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-08 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-08 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-08 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-08 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-08 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-08 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-08 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-08 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fa9090; }
+
+.fresh-09 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-09 .component-product .component-title {
+  color: #a5a5a5; }
+  .fresh-09 .component-product .component-title.title-theme-2 {
+    border-color: #a5a5a5; }
+.fresh-09 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-09 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-09 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-09 .component-product.tpl_1 .product .prod-saleprice {
+    color: #fe8799; }
+  .fresh-09 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-09 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-09 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-09 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-09 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-09 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-09 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-09 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-09 .component-product.tpl_2 .product .prod-saleprice {
+      color: #fe8799; }
+
+.fresh-10 .component-product.has-border {
+  border-color: #dddddd; }
+.fresh-10 .component-product .component-title {
+  color: #ff915a; }
+  .fresh-10 .component-product .component-title.title-theme-2 {
+    border-color: #ff915a; }
+.fresh-10 .component-product.tpl_1 .product {
+  background-color: #fff; }
+  .fresh-10 .component-product.tpl_1 .product .prod-img {
+    background: #ccc; }
+  .fresh-10 .component-product.tpl_1 .product .prod-name {
+    color: #3f3f3f; }
+  .fresh-10 .component-product.tpl_1 .product .prod-saleprice {
+    color: #edc17a; }
+  .fresh-10 .component-product.tpl_1 .product .prod-parprice {
+    color: #888888; }
+  .fresh-10 .component-product.tpl_1 .product .prod-sale {
+    color: #888888; }
+.fresh-10 .component-product.tpl_1.has-border .product {
+  border-color: #dddddd; }
+.fresh-10 .component-product.tpl_2 {
+  background: #fff; }
+  .fresh-10 .component-product.tpl_2 .product {
+    background-color: #fff;
+    border-color: #dddddd; }
+    .fresh-10 .component-product.tpl_2 .product .prod-img {
+      background: #ccc; }
+    .fresh-10 .component-product.tpl_2 .product .prod-name {
+      color: #3f3f3f; }
+    .fresh-10 .component-product.tpl_2 .product .prod-parprice {
+      color: #888888; }
+    .fresh-10 .component-product.tpl_2 .product .prod-saleprice {
+      color: #edc17a; }
+
+/*
+*==== fresh style end====
+*
+
+/*
+* ==== edit form ======
+*/
+#component-product-form .sortable-list li {
+  padding: 5px;
+  border: 2px solid transparent;
+  position: relative; }
+
+#component-product-form .sortable-list li:hover {
+  border-color: #30cab2; }
+
+#component-product-form .sortable-list li .delete-item {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  display: none;
+  cursor: pointer; }
+
+#component-product-form .sortable-list li:hover .delete-item {
+  display: block; }
+
+.products-list li {
+  margin-bottom: 5px;
+  height: 84px; }
+
+.products-list li .prod-img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px; }
+
+.products-list li .prod-name,
+.products-list li .prod-desc {
+  float: left;
+  width: 260px; }

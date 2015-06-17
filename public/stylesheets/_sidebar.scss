@@ -1,0 +1,45 @@
+.sidebar {
+  width: $sidebar-width;
+  float: left;
+}
+
+.menu-item {
+  text-align: center;
+
+  > ul {
+    margin-top: 10px;
+    padding-left: 0; // Override default ul/ol
+    list-style: none;
+
+    > li {
+      position: relative;
+
+      > a {
+        position: relative;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+
+      &.active a {
+        color: #adc645;
+      }
+    }
+  }
+}
+
+.setup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.catalog-menu {
+
+  .setup-button {
+    background-color: #43bb00;
+  }
+}

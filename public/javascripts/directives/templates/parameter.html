@@ -1,0 +1,50 @@
+<div id="options">
+  <div class="option-row" ng-repeat="option in options">
+    <h4 class="option-name">{{ option.name }}</h4>
+    <input type="hidden" name="options[{{ option.id }}][name]" value="{{ option.name }}" />
+    <!-- <span class="close-icon">&times;</span> -->
+    <div class="option-values">
+      <div class="checkbox-inline sku-item" ng-class="{edit: value.checked}" ng-repeat="value in option.values">
+        <label>
+          <input type="checkbox" name="options[{{ option.id }}][values][{{value.id}}][id]" value="{{ value.id }}" ng-model="value.checked" ng-click="checkValue(option, value)">
+          <img src="{{ value.image.url }}" ng-if="value.image">
+        </label>
+        <input name="options[{{ option.id }}][values][{{value.id}}][name]" ng-model="value.name" type="text" value="{{ value.name }}" ng-disabled="!value.checked">
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="option.checked" ng-click="checkAll(option.id)">
+          全选
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--<div class="option-action">-->
+    <!--<input type="button" class="border-r add-parameter" ng-click="openFolderModal()" value="添加规格参数">-->
+    <!--<a class="parameter-link td-middle" href="#">管理商品规格模板</a>-->
+  <!--</div>-->
+  <div class="option-combination" ng-show="combinations.length">
+    <table class="table table-bordered">
+      <tr>
+        <td ng-repeat="option in options | filter:{hadCheck:true}">{{ option.name }}</td>
+        <td>价格<input type="text" name="batch['sale_price']" ng-model="batch.sale_price" ng-blur="batchChange('sale_price')" /></td>
+        <td>数量<input type="text" name="batch['stock']" ng-model="batch.stock" ng-blur="batchChange('stock')" /></td>
+        <td>编码<input type="text" name="batch['sku']" ng-model="batch.sku" ng-blur="batchChange('sku')" /></td>
+      </tr>
+      <tr ng-repeat="combination in combinations" ng-init="combination_str = combination.join('|'); entity = entities[combination_str]">
+        <td ng-repeat="value in combination">
+          {{ optionList[value].name }}
+        </td>
+        <td>
+          <input type="text" name="entities[{{ combination_str }}][sale_price]" value="{{ entity.sale_price }}" ng-model="entity.sale_price" />
+        </td>
+        <td>
+          <input type="text" name="entities[{{ combination_str }}][stock]" value="{{ entity.stock }}" ng-model="entity.stock" />
+        </td>
+        <td>
+          <input type="text" name="entities[{{ combination_str }}][sku]" value="{{ entity.sku }}" ng-model="entity.sku" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

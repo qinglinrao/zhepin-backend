@@ -1,0 +1,58 @@
+.login-wrapper{
+  width:30em;
+  margin:14em auto 0 auto;
+  .am-alert-secondary{
+    color: #C82829;
+    display: none;
+
+  }
+  .am-input-group{
+    margin-bottom: 1.4em;
+  }
+}
+.register-wrapper{
+    width:30em;
+    margin:12em auto 0 auto;
+    .am-alert-secondary{
+      color: #C82829;
+      display: none;
+
+    }
+    .am-input-group{
+      margin-bottom: 1.4em;
+    }
+   .step1{
+     margin-bottom: 2em;
+//     display: none;
+     .phone-input{
+       padding: 0.795em 0.625em;
+     }
+   }
+   .step2{
+      .check-code{
+        width:22em;
+        float:left;
+      }
+      .get-code{
+        width:8em;
+        float:right;
+      }
+
+     span.industry-icon{
+       width:3em;
+       padding: 0.625em 0.30em;
+       float:left;
+     }
+     .am-selected{
+       width: 27em;
+       float:right;
+       .am-selected-btn{
+         width: 27em;
+
+         border:1px solid #ccc;
+       }
+     }
+
+
+   }
+}

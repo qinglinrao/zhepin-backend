@@ -1,0 +1,89 @@
+header {
+  height: 100px;
+  background-color: #2e2f30;
+  margin-bottom: 20px;
+
+  .logo {
+    float: left;
+    margin: 33px 45px 0 0;
+  }
+}
+
+.main-nav {
+  float: left;
+  margin-top: 45px;
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  @include clearfix;
+
+  > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 40px;
+
+    > a {
+      position: relative;
+      display: block;
+      color: #9b9b9b;
+      height: 27px;
+      line-height: 27px;
+      font-size: 18px;
+    }
+
+    .icon {
+      float: left;
+      width: 31px;
+      height: 27px;
+      background-image: url('../images/menu-icon.png');
+      margin-right: 6px;
+      &.icon-order{
+        background-position: 0 0;
+      }
+      &.icon-catalog{
+        background-position: -31px 0;
+      }
+      &.icon-customer{
+        background-position: -62px 0;
+      }
+      &.icon-activity{
+        background-position: -93px 0;
+      }
+      &.icon-data{
+        background-position: -124px 0;
+      }
+      &.icon-app{
+        background-position: -155px 0;
+      }
+    }
+
+    &.active, &:hover {
+      > a {
+        color: #adc645;
+      }
+      .icon {
+        background-image: url('../images/menu-icon-h.png');
+        &.icon-order{
+          background-position: 0 0;
+        }
+        &.icon-catalog{
+          background-position: -31px 0;
+        }
+        &.icon-customer{
+          background-position: -62px 0;
+        }
+        &.icon-activity{
+          background-position: -93px 0;
+        }
+        &.icon-data{
+          background-position: -124px 0;
+        }
+        &.icon-app{
+          background-position: -155px 0;
+        }
+      }
+    }
+  }
+}
+

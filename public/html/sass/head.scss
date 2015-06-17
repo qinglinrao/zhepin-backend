@@ -1,0 +1,160 @@
+
+
+/* header */
+.header{
+    background-color: #2e2f30;
+    height: 100px;
+}
+.head-wrap{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.head-logo{ 
+    width: 165px;
+    float: left;
+    a{
+        display: block;
+        width:161px;
+        padding-top: 33px;
+        img{
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+.head-menu{
+    float: left;
+    padding-top: 45px;
+    ul{
+        li{
+            float: left;
+            margin-left: 40px;
+            a{
+                display: inline-block;
+                height: 27px;
+                line-height: 27px;
+                font-size: 18px;
+                color: #9b9b9b;
+                &:hover{
+                    color: #adc645;
+                }
+                &:hover .icon{
+                    background: url('../images/icon/menu-icon-h.png') no-repeat 0 0;
+                }
+                &:hover .commodity-icon{
+                    background-position: -31px 0;
+                }
+                &:hover .vip-icon{
+                    background-position: -62px 0;
+                }
+                &:hover .activity-icon{
+                    background-position: -93px 0;
+                }
+                &:hover .data-icon{
+                    background-position: -124px 0;
+                }
+                &:hover .my-app-icon{
+                    background-position: -155px 0;
+                }
+                .icon{
+                    display: inline-block;
+                    width: 31px;
+                    height: 27px;
+                    background: url('../images/icon/menu-icon.png') no-repeat 0 0;
+                    vertical-align: top;
+                    margin-right: 6px;
+                }
+                .commodity-icon{
+                    background-position: -31px 0;
+                }
+                .vip-icon{
+                    background-position: -62px 0;
+                }
+                .activity-icon{
+                    background-position: -93px 0;
+                }
+                .data-icon{
+                    background-position: -124px 0;
+                }
+                .my-app-icon{
+                    background-position: -155px 0;
+                }
+            }
+            &.current{
+                a{
+                    color: #adc645;
+                    .icon{
+                        background: url('../images/icon/menu-icon-h.png') no-repeat 0 0;
+                    }
+                    .commodity-icon{
+                        background-position: -31px 0;
+                    }
+                    .vip-icon{
+                        background-position: -62px 0;
+                    }
+                    .activity-icon{
+                        background-position: -93px 0;
+                    }
+                    .data-icon{
+                        background-position: -124px 0;
+                    }
+                    .my-app-icon{
+                        background-position: -155px 0;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.login-inf{
+    float: right;
+    padding-top: 30px;
+    line-height: 54px;
+    .head-portrait{
+        display: inline-block;
+        height: 54px;
+        width: 54px;
+        -webkit-border-radius: 54px;
+        -moz-border-radius: 54px;
+        -o-border-radius: 54px;
+        border-radius: 54px;
+        img{
+            width: 100%;
+            vertical-align: middle;
+            -webkit-border-radius: 54px;
+            -moz-border-radius: 54px;
+            -o-border-radius: 54px;
+            border-radius: 54px;
+        }
+    }
+    .login-account{
+        display: inline-block;
+        height: 18px;
+        padding: 0 12px 0 12px;
+        line-height: 18px;
+        color: #9b9b9b;
+        &:hover{
+            color: #adc645;
+        }
+    }
+    .drop-down{
+        display: inline-block;
+        height: 9px;
+        width: 14px;
+        background: url('../images/icon/drop-down-icon.png') no-repeat center;
+        cursor: pointer;
+    }
+    
+    
+}
+
+
+
+
+
+
+/* header end*/

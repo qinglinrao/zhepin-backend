@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" >	
+  <title>McMore</title>
+  <link href="css/mainstyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="active-wrap">
+<form>
+<div class="active-set">
+  <div class="active-set-wrap">
+    <ul class="set-list">
+      <li>
+	<div class="set-row">
+	  <div class="set-left"><span>活动类型：</span></div>
+	  <div class="set-right"><span class="active-type"><img src="images/active01.jpg" /></span></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>促销方式：</span></div>
+	  <div class="set-right"><input type="text"  class="promotions"  /><span class="prompt">写<b>9</b>就是打<b>九</b>折</span></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>活动名称：</span></div>
+	  <div class="set-right"><input type="text"  class="active-name"  /></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>活动开始时间：</span></div>
+	  <div class="set-right"><span class="day-time-wrap"><input type="text"  class="day-time" /><a href="#" class="day-time-icon"></a></span><input type="text"  class="set-time"  value="20" /><span>时</span><input type="text"  class="set-time"  value="00" /><span>分</span></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>活动结束时间：</span></div>
+	  <div class="set-right"><span class="day-time-wrap"><input type="text"  class="day-time" /><a href="#" class="day-time-icon"></a></span><input type="text"  class="set-time"  value="20" /><span>时</span><input type="text"  class="set-time"  value="00" /><span>分</span></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>促销标签：</span></div>
+	  <div class="set-right"><input type="text"  class="promotions"/><span class="prompt">最多添加<b>5</b>个字,在商品详情页展示</span></div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>人群范围：</span></div>
+	  <div class="set-right"><input type="radio" class="range-radio"/><span>全部会员</span><input type="radio" class="range-radio"/><span>指定会员</span>
+	      <div class="more-choice">
+		<ul class="clearfix">
+		  <li>
+		    <input type="checkbox" class="more-checkbox"/><span>新会员</span>
+		  </li>
+		  <li>
+		    <input type="checkbox" class="more-checkbox"/><span>新会员</span>
+		  </li>
+		  <li>
+		    <input type="checkbox" class="more-checkbox"/><span>新会员</span>
+		  </li>
+		</ul>
+	      </div>
+	  </div>
+	</div>
+	<div class="set-row">
+	  <div class="set-left"><span>活动商品：</span></div>
+	  <div class="set-right"><input type="radio" class="range-radio"/><span>全部商品</span><input type="radio" class="range-radio"/><span>指定商铺</span></div>
+	</div>
+      </li>
+      <li>
+	<div class="set-row">
+	  <div class="set-left"></div>
+	  <div class="set-right"><input type="reset"  class="button-style cancel" value="取消"/><input type="submit" class="button-style set-submit" value="创建"/></div>
+	</div>
+      </li>
+    </ul>
+  </div>
+</div>
+</form>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+
+})	
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+.login-wrapper{
+  width:510px;
+  margin:100px auto 0 auto;
+  font-family: '微软雅黑','黑体','宋体';
+  .logo{
+    width: 500px;
+    height:50px;
+    border-bottom: 1px solid #ccc;
+
+    vertical-align: middle;
+    img{
+      float:left;
+    }
+    b{
+      display: inline;
+      width:100px;
+      padding-left: 15px;
+      border-left: 2px solid #aaa;
+      font-size:20px;
+      font-weight: normal;
+      margin-top: 10px;
+      margin-left:15px;
+      display: block;
+      float:left;
+
+
+    }
+  }
+  .login-form{
+    width:500px;
+    float:left;
+    margin:0px 0px;
+    table{
+      width:100%;
+      tr{
+        padding:10px 0px;
+        display: block;
+
+        td{
+          input.txt-input{
+            width:340px;
+            height:40px;
+            border:1px solid #ccc;
+            border-radius: 3px;
+            font-size:16px;
+            padding:0px 5px;
+            font-size:14px;
+          }
+          input.txt-input:focus{
+            border:1px solid #0A6999;
+          }
+          input.error{
+            border:1px solid #DD514C;
+          }
+          input.success{
+            border:1px solid #429842;
+          }
+          input.btn-submit{
+            background: #3385FF;
+            height:45px;
+            width:340px;
+            text-align: center;
+            line-height: 45px;
+            border:1px solid #3385FF;
+            border-radius: 5px;
+            font-size:18px;
+            font-weight: 500;
+            color:#fff;
+          }
+          input.txt-code{
+            width:210px;
+            float:left;
+          }
+          img.validate_img{
+            width:110px;
+            height:40px;
+            float:right;
+            display: block;
+            margin-left:15px;
+            cursor: pointer;
+          }
+          .check-auto-login{
+            width:30px;
+
+            float:left;
+          }
+          span.check-label{
+            float:left;
+            width:100px;
+            line-height:22px;
+          }
+        }
+        td:first-child{
+          width:100px;
+          text-align: right;
+          vertical-align: middle;
+          font-size:16px;
+          font-weight: 300;
+          padding-right:15px;
+
+        }
+      }
+      tr:first-child{
+        padding:0px;
+        span.form-tip{
+          color:#DD514C;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+
+}
+
+.register-wrapper{
+    width:30em;
+    margin:12em auto 0 auto;
+    .am-alert-secondary{
+      color: #C82829;
+      display: none;
+
+    }
+    .am-input-group{
+      margin-bottom: 1.4em;
+    }
+   .step1{
+     margin-bottom: 2em;
+//     display: none;
+     .phone-input{
+       padding: 0.795em 0.625em;
+     }
+   }
+   .step2{
+      .check-code{
+        width:22em;
+        float:left;
+      }
+      .get-code{
+        width:8em;
+        float:right;
+      }
+
+     span.industry-icon{
+       width:3em;
+       padding: 0.625em 0.30em;
+       float:left;
+     }
+     .am-selected{
+       width: 27em;
+       float:right;
+       .am-selected-btn{
+         width: 27em;
+
+         border:1px solid #ccc;
+       }
+     }
+
+
+   }
+}

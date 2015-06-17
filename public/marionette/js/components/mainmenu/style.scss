@@ -1,0 +1,1648 @@
+
+.component-mainmenu{
+  border-bottom: 1px solid #baa699;
+  background-color: #fff;
+  padding: 0 0.5em;
+    .component-title{
+        &.title-theme-1{
+           padding: 0.1em 0.5em;
+           margin: 0.1em;
+        }
+        &.title-theme-2{
+            padding: 0.1em 0.5em;
+            border-left: 0.25em solid #000;
+            margin: 0.1em;
+        }
+    }
+    .iscroll-wrapper{
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      .more-left{
+        height: 2.15em;
+        width: 0.5em;
+        position: absolute;
+        left: 0px;
+        background: url('./images/more_left.png') left center / 100% 80% no-repeat;
+        display: none;
+      }
+      .more-right{
+        height: 2.15em;
+        width: 0.5em;
+        position: absolute;
+        right: 0px;
+        background: url('./images/more_right.png') left center / 100% 80% no-repeat;
+        display: none;
+      }
+      .scroll-content{
+        width: 10000px;
+      }
+    }
+    .nav-item{
+        padding: 0 1em;
+        float: left;
+        text-align: center;
+        height: 2.15em;
+        overflow: hidden;
+        &:first-child{
+          padding-left: 0.5em;
+        }
+        &:last-child{
+          padding-right: 0.5em;
+        }
+        .nav-item-name{
+            text-align: center;
+            height: 2.1em;
+            line-height: 2.1em;
+            overflow: hidden;
+            position: relative;
+            color: #baa699;
+            span{
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    &.theme-1 {
+        .nav-item{
+            .active .nav-item-name{
+                color: #46939c;
+                border-bottom: 1px solid #46939c;
+                display: inline-block;
+            }
+        }
+    }
+
+    &.theme-2 {
+        .nav-item{
+            .active .nav-item-name{
+                span{
+                    color: #fff;
+                    padding: 0.2em 0.7em;
+                    border-radius: 1em;
+                    background-color: #46939c;
+                }
+
+            }
+        }
+    }
+
+    &.theme-3 {
+        .nav-item {
+            border-color: #baa699;
+            background: url('./images/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+            &:last-child{
+                background: none;
+            }
+        }
+        .active .nav-item-name{
+            color: #46939c;
+        }
+    }
+
+    &.theme-4 {
+        .nav-item{
+            .active .nav-item-name {
+                color: #46939c;
+                span{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+}
+
+
+/*
+* ==== edit form =====
+*/
+
+
+#component-mainmenu-form {
+    .sortable-field li {
+        padding: 5px;
+        border: 2px solid transparent;
+        position: relative;
+        &:hover {
+            border-color: #30cab2;
+        }
+        .toggle-visible {
+            float: right;
+            margin-right: 50px;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            background: #7f7f7f;
+            padding: 0 5px;
+            cursor: pointer;
+            &.visible {
+                background-color: #30cab2
+            }
+        }
+        .name-field {
+            border: 1px solid #cecccd;
+            padding: 0 10px;
+        }
+    }
+
+    .theme-image{
+        width:340px;
+        height: 45px;
+
+        @for $i from 1 through 4{
+            &.theme-#{$i}{
+                background: url('/marionette/js/components/mainmenu/images/theme_#{$i}.png') left top / 340px no-repeat;
+            }
+        }
+    }
+
+}
+
+
+/*
+*==== cute style ====
+*/
+
+.cute-01{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#fcdaf8; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#f84f92; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#f84f92; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute01/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute01 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute01/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-02{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#fdb7c5; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#d2718a; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#d2718a; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute02/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute02 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute02/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-03{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#fac7d4; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#ff74ab; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#ff74ab; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute03/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute03 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute03/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-04{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#c8e0df; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#96c7c7; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#96c7c7; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute04/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute04 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute04/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-05{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#fdd2c0; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#ffaa89; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#ffaa89; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute05/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute05 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute05/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-06{
+
+   $bg:#fafaf7; // mainmenu 背景
+   $border:#c6b58d; // mainmenu 底线颜色
+   $font-color:#ceb685; // mainmenu 字体颜色
+   $active-color:#937023; //选择中字体已颜色  及theme-1字体下line颜色
+   $active-color2-f:#fff; //选择中字体已颜色  theme-2
+   $active-color2-b:#937023; //选择中字体背景颜色  theme-2
+
+   .component-mainmenu{
+     background-color: $bg;
+     border-color: $border;
+     .nav-item{
+       .nav-item-name{
+         color: $font-color;
+       }
+     }
+
+     &.theme-1 {
+       .nav-item{
+         .active .nav-item-name{
+           color: $active-color;
+           border-color: $active-color;
+         }
+       }
+     }
+     &.theme-2 {
+       .nav-item{
+         .active .nav-item-name{
+           span{
+             color: $active-color2-f;
+             background-color: $active-color2-b;
+           }
+         }
+       }
+     }
+
+     &.theme-3 {
+       .nav-item {
+         background: url('./images/cute06/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+         &:last-child{
+           background: none;
+         }
+       }
+       .active .nav-item-name{
+         color: $active-color;
+       }
+     }
+
+     &.theme-4 {
+       .nav-item{
+         .active .nav-item-name {
+           color: $active-color;
+         }
+       }
+     }
+   }
+
+   /*
+   * ==== cute06 edit form =====
+   */
+   #component-mainmenu-form {
+     .theme-image{
+       @for $i from 1 through 4{
+         &.theme-#{$i}{
+           background: url('/marionette/js/components/mainmenu/images/cute06/theme_#{$i}.png') left top / 340px no-repeat;
+         }
+       }
+     }
+   }
+
+ }
+
+.cute-07{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#d8e7b9; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#b6d57b; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#b6d57b; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute07/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute07 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute07/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.cute-08{
+
+   $bg:#fafaf7; // mainmenu 背景
+   $border:#eec99c; // mainmenu 底线颜色
+   $font-color:#888888; // mainmenu 字体颜色
+   $active-color:#d48427; //选择中字体已颜色  及theme-1字体下line颜色
+   $active-color2-f:#fff; //选择中字体已颜色  theme-2
+   $active-color2-b:#d48427; //选择中字体背景颜色  theme-2
+
+    .component-mainmenu{
+     background-color: $bg;
+      border-color: $border;
+      .nav-item{
+       .nav-item-name{
+         color: $font-color;
+       }
+     }
+
+     &.theme-1 {
+       .nav-item{
+         .active .nav-item-name{
+           color: $active-color;
+           border-color: $active-color;
+         }
+       }
+     }
+     &.theme-2 {
+       .nav-item{
+         .active .nav-item-name{
+           span{
+             color: $active-color2-f;
+             background-color: $active-color2-b;
+           }
+         }
+       }
+     }
+
+     &.theme-3 {
+       .nav-item {
+         background: url('./images/cute08/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+         &:last-child{
+           background: none;
+         }
+       }
+       .active .nav-item-name{
+         color: $active-color;
+       }
+     }
+
+     &.theme-4 {
+       .nav-item{
+         .active .nav-item-name {
+           color: $active-color;
+         }
+       }
+     }
+   }
+
+   /*
+   * ==== cute08 edit form =====
+   */
+   #component-mainmenu-form {
+     .theme-image{
+       @for $i from 1 through 4{
+         &.theme-#{$i}{
+           background: url('/marionette/js/components/mainmenu/images/cute08/theme_#{$i}.png') left top / 340px no-repeat;
+         }
+       }
+     }
+   }
+
+ }
+
+
+.cute-09{
+
+   $bg:#fafaf7; // mainmenu 背景
+   $border:#f1b3b1; // mainmenu 底线颜色
+   $font-color:#888888; // mainmenu 字体颜色
+   $active-color:#e86c6c; //选择中字体已颜色  及theme-1字体下line颜色
+   $active-color2-f:#fff; //选择中字体已颜色  theme-2
+   $active-color2-b:#e86c6c; //选择中字体背景颜色  theme-2
+
+   .component-mainmenu{
+     background-color: $bg;
+     border-color: $border;
+     .nav-item{
+       .nav-item-name{
+         color: $font-color;
+       }
+     }
+
+     &.theme-1 {
+       .nav-item{
+         .active .nav-item-name{
+           color: $active-color;
+           border-color: $active-color;
+         }
+       }
+     }
+     &.theme-2 {
+       .nav-item{
+         .active .nav-item-name{
+           span{
+             color: $active-color2-f;
+             background-color: $active-color2-b;
+           }
+         }
+       }
+     }
+
+     &.theme-3 {
+       .nav-item {
+         background: url('./images/cute09/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+         &:last-child{
+           background: none;
+         }
+       }
+       .active .nav-item-name{
+         color: $active-color;
+       }
+     }
+
+     &.theme-4 {
+       .nav-item{
+         .active .nav-item-name {
+           color: $active-color;
+         }
+       }
+     }
+   }
+
+   /*
+   * ==== cute09 edit form =====
+   */
+   #component-mainmenu-form {
+     .theme-image{
+       @for $i from 1 through 4{
+         &.theme-#{$i}{
+           background: url('/marionette/js/components/mainmenu/images/cute09/theme_#{$i}.png') left top / 340px no-repeat;
+         }
+       }
+     }
+   }
+
+ }
+
+.cute-10{
+
+  $bg:#fafaf7; // mainmenu 背景
+  $border:#fdfcff; // mainmenu 底线颜色
+  $font-color:#888888; // mainmenu 字体颜色
+  $active-color:#a56afb; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#a56afb; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/cute10/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== cute10 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/cute10/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*
+*==== cute style end====
+*/
+
+
+/*
+*==== fresh style ====
+*/
+
+.fresh-01{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#afcbde; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#60b49d; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#60b49d; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh01/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh01 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh01/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-02{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#ffc2c3; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#fb939a; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#fb939a; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh02/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh02 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh02/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-03{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#ccc; // mainmenu 字体颜色
+  $active-color:#19989f; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#19989f; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh03/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh03 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh03/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-04{
+
+   $bg:#fff; // mainmenu 背景
+   $border:#d7d7d7; // mainmenu 底线颜色
+   $font-color:#bababa; // mainmenu 字体颜色
+   $active-color:#97c8d6; //选择中字体已颜色  及theme-1字体下line颜色
+   $active-color2-f:#fff; //选择中字体已颜色  theme-2
+   $active-color2-b:#97c8d6; //选择中字体背景颜色  theme-2
+
+   .component-mainmenu{
+     background-color: $bg;
+     border-color: $border;
+     .nav-item{
+       .nav-item-name{
+         color: $font-color;
+       }
+     }
+
+     &.theme-1 {
+       .nav-item{
+         .active .nav-item-name{
+           color: $active-color;
+           border-color: $active-color;
+         }
+       }
+     }
+     &.theme-2 {
+       .nav-item{
+         .active .nav-item-name{
+           span{
+             color: $active-color2-f;
+             background-color: $active-color2-b;
+           }
+         }
+       }
+     }
+
+     &.theme-3 {
+       .nav-item {
+         background: url('./images/fresh04/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+         &:last-child{
+           background: none;
+         }
+       }
+       .active .nav-item-name{
+         color: $active-color;
+       }
+     }
+
+     &.theme-4 {
+       .nav-item{
+         .active .nav-item-name {
+           color: $active-color;
+         }
+       }
+     }
+   }
+
+   /*
+   * ==== fresh04 edit form =====
+   */
+   #component-mainmenu-form {
+     .theme-image{
+       @for $i from 1 through 4{
+         &.theme-#{$i}{
+           background: url('/marionette/js/components/mainmenu/images/fresh04/theme_#{$i}.png') left top / 340px no-repeat;
+         }
+       }
+     }
+   }
+
+ }
+
+.fresh-05{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#a3bacd; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#a3bacd; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh05/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh05 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh05/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-06{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#a7a5b6; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#a7a5b6; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh06/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh06 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh06/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-07{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#b2b2b2; // mainmenu 底线颜色
+  $font-color:#ccc; // mainmenu 字体颜色
+  $active-color:#949494; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#949494; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh07/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh07 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh07/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-08{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#fa9090; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#fa9090; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh08/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh08 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh08/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-09{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#ccc; // mainmenu 字体颜色
+  $active-color:#a5a5a5; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#a5a5a5; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh09/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh09 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh09/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-10{
+
+  $bg:#fff; // mainmenu 背景
+  $border:#d7d7d7; // mainmenu 底线颜色
+  $font-color:#bababa; // mainmenu 字体颜色
+  $active-color:#ff915a; //选择中字体已颜色  及theme-1字体下line颜色
+  $active-color2-f:#fff; //选择中字体已颜色  theme-2
+  $active-color2-b:#ff915a; //选择中字体背景颜色  theme-2
+
+  .component-mainmenu{
+    background-color: $bg;
+    border-color: $border;
+    .nav-item{
+      .nav-item-name{
+        color: $font-color;
+      }
+    }
+
+    &.theme-1 {
+      .nav-item{
+        .active .nav-item-name{
+          color: $active-color;
+          border-color: $active-color;
+        }
+      }
+    }
+    &.theme-2 {
+      .nav-item{
+        .active .nav-item-name{
+          span{
+            color: $active-color2-f;
+            background-color: $active-color2-b;
+          }
+        }
+      }
+    }
+
+    &.theme-3 {
+      .nav-item {
+        background: url('./images/fresh10/mainmenu_line_bg.png') right center / 1px 0.8em no-repeat;
+        &:last-child{
+          background: none;
+        }
+      }
+      .active .nav-item-name{
+        color: $active-color;
+      }
+    }
+
+    &.theme-4 {
+      .nav-item{
+        .active .nav-item-name {
+          color: $active-color;
+        }
+      }
+    }
+  }
+
+  /*
+  * ==== fresh10 edit form =====
+  */
+  #component-mainmenu-form {
+    .theme-image{
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/mainmenu/images/fresh10/theme_#{$i}.png') left top / 340px no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+/*
+*==== fresh style end====
+*/

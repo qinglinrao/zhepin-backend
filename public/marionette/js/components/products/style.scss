@@ -1,0 +1,1971 @@
+
+.component-product{
+    &.has-border{
+        border: 1px solid #ccbaae;
+        border-radius: 0.4em;
+        overflow: hidden;
+        &.tpl_1{
+            border: none;
+        }
+        &.tpl_2{
+            .product{
+                &:last-child{
+                    margin-bottom: 0px;
+                    border-bottom-left-radius: 0.4em;
+                    border-bottom-right-radius: 0.4em;
+                }
+            }
+        }
+    }
+    .component-title{
+        color: #634932;
+        height: 1em;
+        line-height: 0.9em;
+        margin-top: 0.5em;
+        margin-bottom: 0.4em;
+        > span{
+            font-size: 0.9em;
+        }
+        &.title-theme-2{
+            border-left: 0.2em solid #46939c;
+        }
+    }
+
+    &.tpl_1{
+        .product{
+            width: 7.25em;
+            float: left;
+            margin-bottom: 0.5em;
+            background-color: #fff;
+            margin-left: 0.5em;
+            .prod-img{
+                width: 100%;
+                height: 7.25em;
+                background: #ccc;
+                margin-bottom: 0.25em;
+            }
+            .prod-name{
+                span{
+                    font-size: 0.6em;
+                    display: block;
+                }
+                color: #63492f;
+                height: 40px;
+                line-height: 20px;
+                padding: 0 0.25em;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                position: relative;
+            }
+            .prod-saleprice{
+                span{
+                    font-size: 0.6em;
+                }
+                color: #8f3523;
+                float: left;
+                height: 1em;
+                line-height: 0.75em;
+                padding: 0 0.25em;
+            }
+            .prod-parprice{
+                color: #8f3523;
+                padding: 0 0.25em;
+                span{
+                    font-size: 0.6em;
+                }
+            }
+            .prod-sale{
+                color: #888;
+                float: right;
+                height: 1em;
+                line-height: 0.75em;
+                padding: 0 0.25em;
+                span{
+                    font-size: 0.6em;
+                }
+            }
+        }
+        &.has-border{
+            .product{
+                border: 1px solid #ccbaae;
+                &.last{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        &.theme-2{
+            .product .prod-img{
+                background: #30cab2;
+            }
+        }
+    }
+
+    &.tpl_2{
+        background: #fff;
+        width: 15em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        .component-title{
+            margin-bottom: 0;
+        }
+
+        .product{
+            border-bottom: 1px solid transparent;
+            background-color: #fff;
+            border-bottom: 1px solid #ccbaae;
+            &:last-child{
+                border-bottom: 0;
+            }
+            &:first-child{
+                padding-top: 0;
+            }
+            .prod-img{
+                float: left;
+                width: 5em;
+                height: 5em;
+                background: #ccc;
+                margin: 0.25em;
+            }
+            .prod-name{
+                color: #63492f;
+                float: left;
+                width: 8.25em;
+                height: 50px;
+                line-height: 17px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                position: relative;
+                margin-top: 0.5em;
+                span{
+                    font-size: 0.75em;
+                    display: block;
+                }
+            }
+            .prod-parprice{
+                color: #c5c4c4;
+                padding-top: 0.25em;
+                text-decoration: line-through;
+                width: 8.25em;
+                float: left;
+                line-height: 1em;
+                span{
+                    font-size: 0.7em;
+                }
+            }
+            .prod-saleprice{
+                color: #8f3523;
+                float: left;
+                width: 8.25em;
+                line-height: 1em;
+                span{
+                    font-size: 1em;
+                }
+            }
+
+        }
+
+        &.theme-2{
+            .product{
+                .prod-img{
+                    background: #30cab2;
+                }
+            }
+        }
+    }
+}
+
+/*
+*==== cute style ====
+*/
+
+.cute-01{
+
+   $border:#cacaca;  // 产品边框
+   $font-color-title:#3f3f3f; // 一级标题字体颜色
+   $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+   $font-color-s-c:#888888; // 内容字体颜色 原价格
+   $common-color: #888888;   // 通用字体 已售数量
+   $price-color: #fc316c;   // 价格字体颜色
+   $title-border:#f84f92;  // 标题左边border颜色
+   $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+ }
+
+.cute-02{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#d2718a; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #ea9d9c;   // 价格字体颜色
+  $title-border:#d2718a;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-03{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #ff75ac;   // 价格字体颜色
+  $title-border:#ff74ab;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-04{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #d8633b;   // 价格字体颜色
+  $title-border:#96c7c7;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-05{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #ff6766;   // 价格字体颜色
+  $title-border:#ffaa89;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-06{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#937023; // 一级标题字体颜色
+  $font-color-m-t:#937023; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #df633b;   // 价格字体颜色
+  $title-border:#937023;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-07{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #feaca2;   // 价格字体颜色
+  $title-border:#b6d57b;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-08{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fe6e7e;   // 价格字体颜色
+  $title-border:#d48427;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cute-09{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #db0716;   // 价格字体颜色
+  $title-border:#e86c6c;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.cute-10{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#3f3f3f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fd4788;   // 价格字体颜色
+  $title-border:#a56afb;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+                      background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+                background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+*==== cute style end====
+*/
+
+
+/*
+*==== fresh style ====
+*/
+
+
+
+.fresh-01{
+
+  $border:#cccccc;  // 产品边框
+  $font-color-title:#60b49d; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fc766a;   // 价格字体颜色
+  $title-border:#60b49d;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-02{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#fb939a; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fb937a;   // 价格字体颜色
+  $title-border:#fb939a;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-03{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#19989f; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #78c7ce;   // 价格字体颜色
+  $title-border:#19989f;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-04{
+
+  $border:#e8e8e8;  // 产品边框
+  $font-color-title:#97c8d6; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #97c8d6;   // 价格字体颜色
+  $title-border:#97c8d6;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-05{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#a3bacd; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #c2987d;   // 价格字体颜色
+  $title-border:#a3bacd;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-06{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#a7a5b6; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #a3bacd;   // 价格字体颜色
+  $title-border:#a7a5b6;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-07{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#949494; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #a7a5b6;   // 价格字体颜色
+  $title-border:#949494;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-08{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#fa9090; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fa9090;   // 价格字体颜色
+  $title-border:#fa9090;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.fresh-09{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#a5a5a5; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #fe8799;   // 价格字体颜色
+  $title-border:#a5a5a5;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.fresh-10{
+
+  $border:#dddddd;  // 产品边框
+  $font-color-title:#ff915a; // 一级标题字体颜色
+  $font-color-m-t:#3f3f3f; // 二级标题字体颜色 商品标题
+  $font-color-s-c:#888888; // 内容字体颜色 原价格
+  $common-color: #888888;   // 通用字体 已售数量
+  $price-color: #edc17a;   // 价格字体颜色
+  $title-border:#ff915a;  // 标题左边border颜色
+  $prod-bg:#fff; // 产品背景颜色
+
+  .component-product{
+    &.has-border{
+      border-color: $border;
+    }
+    .component-title{
+      color: $font-color-title;
+      &.title-theme-2{
+        border-color: $title-border;
+      }
+    }
+
+    &.tpl_1{
+      .product{
+        background-color: $prod-bg;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-saleprice{
+          color: $price-color;
+        }
+        .prod-parprice{
+          color:$font-color-s-c;
+        }
+        .prod-sale{
+          color: $common-color;
+        }
+      }
+      &.has-border{
+        .product{
+          border-color: $border;
+        }
+      }
+
+      &.theme-2{
+        .product .prod-img{
+          //          background: #30cab2;
+        }
+      }
+    }
+
+    &.tpl_2{
+      background: #fff;
+      .product{
+        //        border-bottom: 1px solid transparent;
+        background-color: $prod-bg;
+        border-color: $border;
+        .prod-img{
+          background: #ccc;
+        }
+        .prod-name{
+          color: $font-color-m-t;
+        }
+        .prod-parprice{
+          color: $font-color-s-c;
+        }
+        .prod-saleprice{
+          color:  $price-color;
+        }
+      }
+
+      &.theme-2{
+        .product{
+          .prod-img{
+            //            background: #30cab2;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*==== fresh style end====
+*
+
+/*
+* ==== edit form ======
+*/
+#component-product-form .sortable-list li{
+    padding: 5px;
+    border: 2px solid transparent;
+    position: relative;
+}
+#component-product-form .sortable-list li:hover{
+    border-color: #30cab2;
+}
+
+
+#component-product-form .sortable-list li .delete-item{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    display: none;
+    cursor: pointer;
+}
+#component-product-form .sortable-list li:hover .delete-item{
+    display: block;
+}
+.products-list li {
+    margin-bottom: 5px;
+    height: 84px;
+}
+.products-list li .prod-img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.products-list li .prod-name,
+.products-list li .prod-desc{
+    float: left;
+    width: 250px;
+}

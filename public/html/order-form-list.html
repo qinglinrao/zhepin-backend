@@ -1,0 +1,336 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" >	
+  <title>McMore</title>
+  <link href="css/mainstyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="order-form-list-wrap">
+  <form>
+    <div class="search">
+      <div class="search-top">
+	<input type="text" class="name" placeholder="请输入订单编号或者商品名称"/ ><input type="submit" class="submit" value="查询" /><span class="more-filter">收起筛选条件</span> 
+      </div>
+      <div class="search-bottom">
+	 <div class="filter-list">
+	    <ul class="clearfix">
+	      <li>
+		<span>收货人</span><input type="text"  /> 
+	      </li>
+	      <li>
+		<span>手机号</span><input type="text"  /> 
+		
+	      </li>
+	      <li>
+		<span>下单时间</span><input type="text"  /><input type="text"  /> 
+	      </li>
+	      <li>
+		<span>库存</span><select>
+		  <option class="e-option" value ="1">1</option>
+		  <option class="e-option" value="2">2</option>
+		  <option class="e-option" value="3">3</option>
+		</select>
+		
+	      </li>
+	      <li>
+		<span>订单状态</span><select>
+		  <option class="e-option" value ="1">支付</option>
+		  <option class="e-option" value="2">未支付</option>
+		</select>
+		
+		
+	      </li>
+	      <li>
+		<span>收货地址</span><select>
+		  <option class="e-option" value ="1">所在省</option>
+		  <option class="e-option" value="2">女士</option>
+		  <option class="e-option" value="3">小姐</option>
+		</select><select>
+		  <option class="e-option" value ="1">所在市</option>
+		  <option class="e-option" value="2">女士</option>
+		  <option class="e-option" value="3">小姐</option>
+		</select>	
+	      </li>
+	    </ul>
+	 </div>
+      </div>
+    </div>
+</form>
+    <div class="order-form-list-con">
+      <div class="form-pagelist clearfix">
+	  <div class="pagelist-left">
+	    <input type="checkbox" class="all-checkbox"/><span class="all-choose">全选</span><a href="#">发货</a><a href="#">订单审核</a>
+	  </div>
+	  <div class="pagelist-right">
+	    <a href="#">上一页</a><i>|</i><a href="#">下一页</a><i>第</i><select>
+		  <option class="e-option" value ="1"><span>1</span>/<span>20</span></option>
+		  <option class="e-option" value="2"><span>2</span>/<span>20</span></option>
+		  <option class="e-option" value="3"><span>2</span>/<span>20</span></option>
+		</select>
+	  </div>
+      </div>
+      <div class="order-form-list">
+	<div class="order-form-th">
+	  <table>
+	    <tbody>
+	      <tr>
+		<th class="one">商品信息</th>
+		<th class="two">单价／数量</th>
+		<th class="three">优惠信息</th>
+		<th class="four">商品规格</th>
+		<th class="five">库存</th>
+		<th class="six">发票类型</th>
+		<th class="sev">商品操作</th>
+		<th class="eig">订单详情</th>
+		<th class="nine">收货信息</th>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	<div class="order-form-item">
+	  <div class="item-top clearfix">
+	    <div class="top-left">
+	      <input type="checkbox"  class="checkbox"/><i>订单编号：<span>222222333333</span></i><i>支付时间：<span>2014-1-1  10:50:38</span></i>
+	    </div>
+	    <div class="top-right">
+	      <span>已支付-</span><a href="order-form-detail.html" class="detail-link" >查看详情</a><a href="#" >关闭</a>
+	    </div>
+	  </div>
+	  <table class="table-wrap">
+	    <tbody>
+	      <tr>
+		<td class="first wrap-td">
+		  <table>
+		    <tbody>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" class="trading-success">交易成功</a>
+			  <a href="#" >交易成功</a>
+			</td>
+		      </tr>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" class="refund-success">退款成功</a>
+			  <a href="#" >交易成功</a>
+			</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</td>
+		<td class="wrap-td">
+		    <p>商品总价：￥800.00</p>
+		    <p>运费：￥800.00</p>
+		    <p>红包：￥800.00</p>
+		    <p>积分：￥800.00</p>
+		    <p>实付：￥800.00</p>
+		    <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+		<td class="wrap-td">
+		  <p>收件人：张张张</p>
+		  <p>手机号：12323323323</p>
+		  <p>地址：广州市天河区棠东东路御富科贸园御景B座202</p>
+		  <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	
+	<div class="order-form-item">
+	  <div class="item-top clearfix">
+	    <div class="top-left">
+	      <input type="checkbox"  class="checkbox" /><i>订单编号：<span>222222333333</span></i><i>支付时间：<span>2014-1-1  10:50:38</span></i>
+	    </div>
+	    <div class="top-right">
+	      <span>已支付-</span><a href="#" class="detail-link">查看详情</a><a href="#" >关闭</a>
+	    </div>
+	  </div>
+	  <table class="table-wrap">
+	    <tbody>
+	      <tr>
+		<td class="first wrap-td">
+		  <table>
+		    <tbody>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" class="trading-success">交易成功</a>
+			  <a href="#" >退款中</a>
+			  
+			</td>
+		      </tr>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" >已发货</a>
+			</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</td>
+		<td class="wrap-td">
+		    <p>商品总价：￥800.00</p>
+		    <p>运费：￥800.00</p>
+		    <p>红包：￥800.00</p>
+		    <p>积分：￥800.00</p>
+		    <p>实付：￥800.00</p>
+		    <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+		<td class="wrap-td">
+		  <p>收件人：张张张</p>
+		  <p>手机号：12323323323</p>
+		  <p>地址：广州市天河区棠东东路御富科贸园御景B座202</p>
+		  <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	
+	
+	<div class="order-form-item">
+	  <div class="item-top clearfix">
+	    <div class="top-left">
+	      <input type="checkbox"  class="checkbox" /><i>订单编号：<span>222222333333</span></i><i>支付时间：<span>2014-1-1  10:50:38</span></i>
+	    </div>
+	    <div class="top-right">
+	      <span>已支付-</span><a href="#" class="detail-link">查看详情</a><a href="#" >关闭</a>
+	    </div>
+	  </div>
+	  <table class="table-wrap">
+	    <tbody>
+	      <tr>
+		<td class="first wrap-td">
+		  <table>
+		    <tbody>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" class="trading-success">交易成功</a>
+			</td>
+		      </tr>
+		      <tr>
+			<td class="one"><a href="#"><img src="images/product01.jpg"/></a></td>
+			<td class="two">
+			  <div class="td-wrap">
+			    <p><a href="#">达芙妮新款顺丰包邮达芙妮新款顺丰包邮</a></p>
+			    <i>编号：<span>233233233233</span></i>
+			  </div>
+			</td>
+			<td class="three">￥200.00 × 3</td>
+			<td class="four"><img src="images/icon/preferential-icon.png"/ title="30"></td>
+			<td class="five"><span>蓝色</span>/<span>37</span></td>
+			<td class="six">20</td>
+			<td class="sev">普通发票</td>
+			<td class="eig">
+			  <a href="#" class="trading-success">交易成功</a>
+			  <a href="#" >退款中</a>
+			</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</td>
+		<td class="wrap-td">
+		    <p>商品总价：￥800.00</p>
+		    <p>运费：￥800.00</p>
+		    <p>红包：￥800.00</p>
+		    <p>积分：￥800.00</p>
+		    <p>实付：￥800.00</p>
+		    <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+		<td class="wrap-td">
+		  <p>收件人：张张张</p>
+		  <p>手机号：12323323323</p>
+		  <p>地址：广州市天河区棠东东路御富科贸园御景B座202</p>
+		  <p class="last"><a href="#" class="to-revise">修改</a></p>
+		</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+      </div>
+      
+      <div class="form-pagelist clearfix">
+	  <div class="pagelist-left">
+	    <input type="checkbox"  class="checkbox" /><span>全选</span><a href="#">发货</a><a href="#">订单审核</a>
+	  </div>
+	  <div class="pagelist-right">
+	    <a href="#">上一页</a><i>|</i><a href="#">下一页</a><i>第</i><select>
+		  <option class="e-option" value ="1"><span>1</span>/<span>20</span></option>
+		  <option class="e-option" value="2"><span>2</span>/<span>20</span></option>
+		  <option class="e-option" value="3"><span>2</span>/<span>20</span></option>
+		</select>
+	  </div>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+
+})	
+</script>
+</body>
+</html>

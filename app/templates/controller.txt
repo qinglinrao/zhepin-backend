@@ -1,0 +1,47 @@
+<?php
+
+class $NAME$ extends \BaseController {
+
+	# GET /$COLLECTION$
+	public function index()
+	{
+		//
+	}
+
+	# GET /$COLLECTION$/create
+	public function create()
+	{
+		//
+	}
+
+	# POST /$COLLECTION$
+	public function store()
+	{
+		//
+	}
+
+	# GET /$COLLECTION$/{id}
+	public function show($id)
+	{
+		//
+	}
+
+	# GET /$COLLECTION$/{id}/edit
+	public function edit($id)
+	{
+		//
+	}
+
+	# PUT /$COLLECTION$/{id}
+	public function update($id)
+	{
+		//
+	}
+
+	# DELETE /$COLLECTION$/{id}
+	public function destroy($id)
+	{
+		//
+	}
+
+}

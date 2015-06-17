@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+  <title>Mcmore</title>
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/mainstyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="product-standard">
+  <div class="title-prompt">商品属性：显示在具体商品的购买页面中，一般在商品图片的右侧，商品名称正面。商品属性，应该是商品特有的重要属性，是可供用户挑选的属性。（一般包含：颜色、尺码）</div>
+
+  <div class="product-standard-table">
+    <table>
+      <thead>
+      <tr><th class="block1">属性名称</th><th class="block2">商品属性内容</th><th class="block1">所属分类</th><th class="block1">操作</th></tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="block1"><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><span class="td-middle">尺码</span></td>
+        <td class="block2">
+          <div class="btn-group" data-toggle="buttons"><span class="btn btn-default " disabled="disabled">37</span><button type="button" class="btn btn-default ">&times;</button></div>
+          <div class="btn-group" data-toggle="buttons"><span class="btn btn-default " disabled="disabled">37</span><button type="button" class="btn btn-default ">&times;</button></div>
+          <input type="text" class="standard-text"><span class="btn glyphicon glyphicon-plus"></span>
+        </td>
+        <td class="block1"></td>
+        <td class="block1"><a class="operation-link" href="#">删除</a></td>
+      </tr>
+      <tr>
+        <td class="block1"><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><span class="td-middle">尺码</span></td>
+        <td class="block2">
+          <div class="btn-group" data-toggle="buttons"><span class="btn btn-default " disabled="disabled">37</span><button type="button" class="btn btn-default ">&times;</button></div>
+          <div class="btn-group" data-toggle="buttons"><span class="btn btn-default " disabled="disabled">37</span><button type="button" class="btn btn-default ">&times;</button></div>
+          <input type="text" class="standard-text"><span class="btn glyphicon glyphicon-plus"></span>
+        </td>
+        <td class="block1"></td>
+        <td class="block1"><a class="operation-link" href="#">删除</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <input type="submit" class="button-style set-submit"  data-toggle="modal" data-target="#myModal" value="添加规格"/>
+
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">添加商品规格</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" role="form">
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="formGroupInputSmall">属性名称</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="formGroupInputSmall" placeholder="属性名称">
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="formGroupInputSmall">属性分类</label>
+              <div class="row">
+                <div class="col-sm-4 ">
+                  <select class="form-control input-sm">
+                    <option>Disabled select</option>
+                    <option>Disabled select</option>
+                    <option>Disabled select</option>
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-control input-sm">
+                    <option>Disabled select</option>
+                    <option>Disabled select</option>
+                    <option>Disabled select</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary">添加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+
+  })
+</script>
+</body>
+</html>

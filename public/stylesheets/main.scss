@@ -1,0 +1,204 @@
+@import "../javascripts/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "commons";
+
+$container-width: 1310px;
+$sidebar-width: 165px;
+
+/* Space out content a bit */
+body {
+  font-size: 12px;
+}
+a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  color: #adc645;
+}
+
+legend {
+  margin-bottom: 5px;
+  border-bottom: transparent;
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+/* Page header */
+@import "header";
+
+/* Page sidebar */
+@import "sidebar";
+
+/* Page main */
+.main {
+  margin-left: $sidebar-width;
+  min-height: 430px;
+}
+
+/* Page search-bar */
+@import "search-bar";
+
+/* Page action-bar */
+@import "action-bar";
+
+.table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  > thead > tr > th {
+    border-bottom: none;
+    color: #787878;
+    white-space: nowrap;
+  }
+}
+
+.edit-table {
+  > tbody > tr > td {
+    text-align: left;
+  }
+
+  > tbody > tr > th {
+    width: 10%;
+    text-align: right;
+  }
+  .profit{
+    width:70%;
+    tr{
+      margin:3px 0;
+      display: block;
+      td:first-child{
+        width:60px;
+        padding-right:10px;
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+.title-prompt {
+  background-color: #d4e8f5;
+  border: 1px dashed #8ccaf6;
+  color: #888888;
+  padding: 5px 15px;
+}
+
+.category-column {
+  text-align: left!important;
+
+  &.children-column {
+    background: url('../images/children-column.png') no-repeat 8px center;
+    padding-left: 40px;
+  }
+
+  .category-name {
+    display: inline-block;
+    border: 1px solid #888888;
+    padding: 2px 10px;
+    min-width: 200px;
+  }
+  .add-category {
+    display: inline-block;
+    padding: 2px 10px 2px 30px;
+    background: url('../images/icon.png') no-repeat 10px center;
+    border: 1px solid #d7d7d8;
+  }
+}
+
+.modal-folder {
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  @include clearfix;
+
+  > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 3px;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    width: 134px;
+    height: 55px;
+
+    > div {
+      height: 100%;
+      overflow: hidden;
+      line-height: 1.2;
+      padding: 5px 3px 5px 65px;
+      background: url('../images/modal-folder.png') no-repeat 3px center;
+    }
+
+    &.selected {
+      border: 1px solid #4fa7ff;
+      background: url('../images/checked.png') no-repeat right bottom;
+    }
+  }
+
+  .add-folder {
+    padding-left: 50px;
+    line-height: 55px;
+    border: 0;
+    background: url('../images/icon-folder-add.png') no-repeat 10px center;
+  }
+}
+
+.item, .fileinput-button {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  position: relative;
+}
+.fileinput-button {
+  border: 1px solid #c9c9c9;
+}
+.item {
+  .corner {
+    position: absolute;
+    right: 3px;
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+/* option */
+@import "option";
+
+/* Page order */
+@import "order";
+
+
+/* Page customer-level */
+@import "customer";
+
+/* Page customer-level */
+@import "login";
+
+/* Page customer-level */
+@import "customer-level";
+
+/* Page system-config */
+@import "system-config";
+
+@import "other";
+
+/* Page footer */
+@import "footer";

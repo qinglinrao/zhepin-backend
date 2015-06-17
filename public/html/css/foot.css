@@ -1,0 +1,25 @@
+/*footer*/
+/* line 3, ../sass/foot.scss */
+.footer {
+  height: 100px;
+  background-color: #666666;
+}
+/* line 6, ../sass/foot.scss */
+.footer p {
+  width: 1210px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 25px;
+  color: #9b9b9b;
+}
+/* line 13, ../sass/foot.scss */
+.footer p a {
+  color: #fff;
+}
+/* line 17, ../sass/foot.scss */
+.footer .top {
+  color: #fff;
+}
+
+/*footer end*/

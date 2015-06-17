@@ -1,0 +1,38 @@
+<div id='component-mainmenu-form'>
+    <form>     
+        <div class="section">导航信息</div>
+        <div class='filed-wrapper clearfix'>
+            <ul class="sortable-field list-unstyled">
+                <% for (i in data) { %>
+                <li data-id="<%= data[i].id %>" title="可拖动进行排序">
+                    <input disabled maxlength="6" class="name-field" type="text" name="name" value="<%= data[i].name %>"/>
+
+                    <div class="toggle-visible <% if(data[i].visible == 1) print('visible') %>"><% if(data[i].visible == 1) print('显示中'); else print('已隐藏') %></div>
+                    <input class="visible-field" type="hidden" name="visible" value="<%= data[i].visible %>"/>
+                    <input class="active-field" type="hidden" name="active" value="<%= data[i].active %>"/>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+
+        <div class='filed-wrapper clearfix'>
+            <div class="field-label">上间距</div> 
+            <div class="field">
+                无：<input <% if(hasMarginTop == 'no') print('checked="checked"') %> data-role='hasMarginTop' type='radio' name='has_margin_top' class='field-margin-top with-role' value='no'/> 
+                有：<input <% if(hasMarginTop == 'yes') print('checked="checked"') %> data-role='hasMarginTop' type='radio' name='has_margin_top' class='field-margin-top with-role' value='yes'/>
+            </div>
+        </div>
+        <div class="section">导航样式</div>
+        <div class='filed-wrapper clearfix'>
+            <div class="title-theme">
+                <% for (i = 1; i<=4; i++) { %>
+                <div class="select-wrapper <% if(themeId == 'theme-'+i) print('active') %>" data-role="themeId" data-val="theme-<%= i %>">
+                    <div class="theme-image theme-<%= i %>"></div>
+                    <div class="selected-icon"></div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </form>
+
+</div>

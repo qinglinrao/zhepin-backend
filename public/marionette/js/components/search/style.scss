@@ -1,0 +1,1738 @@
+.component-search{
+    #search{
+        background-color: #a78873;
+        padding: 5px 10px;
+        .logo {
+            float: left;
+            width: 110px;
+            img{
+                max-height: 30px;
+                max-width: 100px;
+            }
+        }
+        .search-form{
+            float: left;
+            width: 150px;
+            position: relative;
+            line-height: 1em;
+            form{
+              margin-bottom: 0;
+            }
+            .search-keyword{
+                height: 30px;
+                border: 1px solid #8f5f3f;
+                border-radius: 15px;
+                width: 150px;
+                padding: 0 40px 0 10px;
+                font-size: 12px;
+                color: #bfaa9a;
+            }
+            .search-submit{
+                position: absolute;
+                right: 5px;
+                top: 0px;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                border: none;
+                font-size: 0;
+                background: url('./images/search_bt_bg.png') center center / 20px 20px no-repeat;
+            }
+
+        }
+
+        .links{
+            float: right;
+            li{
+                padding: 0 0 0 10px;
+                float: left;
+                img{
+                    width:1.5em;
+                    height:1.5em;
+                }
+                // 改icon 路径增加
+                .search-image{
+                    background: url('./images/list_icon.png') left top/1.5em no-repeat;
+                    width:1.5em;
+                    height:1.5em;
+                }
+            }
+        }
+    }
+
+    &.tpl_2{
+        #search{
+            .search-form{
+                width: 190px;
+                .search-keyword{
+                    width: 190px;
+                }
+            }
+        }
+    }
+
+    &.theme-2{
+        #search{
+            .search-form{
+                .search-keyword{
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    &.theme-3{
+        #search{
+            .search-form{
+                .search-keyword{
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+
+    &.tpl_4{
+        #search{
+            .links{
+                li{
+                    padding: 0;
+                    height: 30px;
+                    a{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: #fff;
+                        text-decoration: none;
+                        padding-left:10px
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    &:first-child {
+                        a{
+                            padding-right: 10px;
+                            border-right: 1px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  // 改icon 路径增加
+    &.tpl_3{
+      #search{
+        .links{
+          li{
+            .icon_1{
+              background: url('./images/search_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_2{
+              background: url('./images/cart_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_3{
+              background: url('./images/list_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+  // 改icon 路径增加
+    &.tpl_5{
+      #search{
+        .links{
+          li{
+            .search-image{
+              background: url('./images/profile_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+
+
+
+
+
+/*
+*==== edit form ====
+*/
+
+.field .logo img{
+    max-width: 110px;
+    max-height: 30px;
+    background-color: #000;
+}
+
+#component-search-form{
+
+    .tpl-image{
+        width: 310px;
+        height: 30px;
+
+        @for $i from 1 through 5{
+            &.tpl_#{$i}{
+                background: url('/marionette/js/components/search/images/tpl_#{$i}.png') left top / 310px no-repeat;
+            }
+        }
+    }
+
+    .theme-image{
+        width:310px;
+        height: 32px;
+
+        @for $i from 1 through 4{
+            &.theme-#{$i}{
+                background: url('/marionette/js/components/search/images/theme_#{$i}.png') left top / 310px no-repeat;
+            }
+        }
+    }
+
+}
+
+/*
+*==== cute style ====
+*/
+
+.cute-01{
+
+  $bg:#fa95b2; // search 背景
+  $input-bg:#fadce4; // search input背景
+  $border:#fa95b2;  // search input 边框
+  $in-font-color:#fca3bc; // search input 字体颜色
+  $font-color:#ffffff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute01/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute01 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute01/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute01/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-02{
+
+  $bg:#e0aeb9; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#e0aeb9;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#ffffff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute02/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute02 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute02/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute02/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-03{
+
+  $bg:#ffffff; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#e8e8e8;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#ff75ac; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute03/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+
+      .links{
+        float: right;
+        li{
+          .search-image{
+            background: url('./images/cute03/list_icon.png') left top/1.5em no-repeat;
+          }
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_3{
+      #search{
+        .links{
+          li{
+            .icon_1{
+              background: url('./images/cute03/search_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_2{
+              background: url('./images/cute03/cart_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_3{
+              background: url('./images/cute03/list_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_5{
+      #search{
+        .links{
+          li{
+            .search-image{
+              background: url('./images/cute03/profile_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute03 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute03/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute03/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.cute-04{
+
+  $bg:#69d4d4; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#d2f2f2;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute04/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute04 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute04/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute04/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-05{
+
+  $bg:#fa9696; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#fa9696;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute05/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute05 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute05/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute05/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-06{
+
+  $bg:#987e46; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#e0d9c8;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute06/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute06 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute06/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute06/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.cute-07{
+
+  $bg:#b6d57b; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#b6d57b;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute07/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute07 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute07/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute07/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-08{
+
+  $bg:#e29842; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#e29842;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute08/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute08 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute08/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute08/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.cute-09{
+
+  $bg:#e86c6c; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#e86c6c;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute09/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute09 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute09/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute09/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.cute-10{
+
+  $bg:#b396df; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#b396df;  // search input 边框
+  $in-font-color:#dcdcdc; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/cute10/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== cute10 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/cute10/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/cute10/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+/*
+*==== cute style  end====
+*/
+
+/*
+*==== fresh style ====
+*/
+
+
+.fresh-01{
+
+  $bg:#60b49d; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#41a489;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#ffffff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh01/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh01 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh01/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh01/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-02{
+
+  $bg:#fb939a; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#fd9092;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#ffffff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh02/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh02 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh02/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh02/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-03{
+
+  $bg:#19989f; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#41a489;  // search input 边框
+  $in-font-color:#7c7c7c; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh03/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh03 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh03/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh03/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.fresh-04{
+
+  $bg:#97c8d6; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#97c8d6;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh04/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh04 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh04/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh04/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-05{
+
+  $bg:#a3bacd; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#a3bacd;  // search input 边框
+  $in-font-color:#7c7c7c; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh05/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh05 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh05/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh05/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-06{
+
+  $bg:#a7a5b6; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#a7a5b6;  // search input 边框
+  $in-font-color:#7c7c7c; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh06/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh06 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh06/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh06/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.fresh-07{
+
+  $bg:#fff; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#cdcdcd;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#515151; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh07/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+
+      .links{
+        float: right;
+        li{
+          .search-image{
+            background: url('./images/fresh07/list_icon.png') left top/1.5em no-repeat;
+          }
+        }
+      }
+
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_3{
+      #search{
+        .links{
+          li{
+            .icon_1{
+              background: url('./images/fresh07/search_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_2{
+              background: url('./images/fresh07/cart_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_3{
+              background: url('./images/fresh07/list_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_5{
+      #search{
+        .links{
+          li{
+            .search-image{
+              background: url('./images/fresh07/profile_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh07 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh07/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh07/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-08{
+
+  $bg:#fff; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#cdcdcd;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh08/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+
+      .links{
+        float: right;
+        li{
+          .search-image{
+            background: url('./images/fresh08/list_icon.png') left top/1.5em no-repeat;
+
+          }
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.tpl_3{
+      #search{
+        .links{
+          li{
+            .icon_1{
+              background: url('./images/fresh08/search_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_2{
+              background: url('./images/fresh08/cart_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_3{
+              background: url('./images/fresh08/list_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_5{
+      #search{
+        .links{
+          li{
+            .search-image{
+              background: url('./images/fresh08/profile_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh08 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh08/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh08/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.fresh-09{
+
+  $bg:#b0b0b0; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#b0b0b0;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#fff; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh09/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh09 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh09/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh09/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+.fresh-10{
+
+  $bg:#fff; // search 背景
+  $input-bg:#fff; // search input背景
+  $border:#cdcdcd;  // search input 边框
+  $in-font-color:#c7c7c7; // search input 字体颜色
+  $font-color:#ff915a; // 登录注册 字体颜色
+
+  .component-search{
+    #search{
+      background-color: $bg;
+      .search-form{
+        .search-keyword{
+          border-color: $border;
+          color:  $in-font-color;
+          background-color:$input-bg ;
+        }
+        .search-submit{
+          background: url('./images/fresh10/search_bt_bg.png') center center / 20px 20px no-repeat;
+        }
+      }
+      .links{
+        float: right;
+        li{
+          .search-image{
+            background: url('./images/fresh10/list_icon.png') left top/1.5em no-repeat;
+
+          }
+        }
+      }
+    }
+
+    &.tpl_4{
+      #search{
+        .links{
+          li{
+            a{
+              color: $font-color;
+            }
+            &:first-child {
+              a{
+                border-color: $font-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    &.tpl_3{
+      #search{
+        .links{
+          li{
+            .icon_1{
+              background: url('./images/fresh10/search_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_2{
+              background: url('./images/fresh10/cart_icon.png') left top/1.5em no-repeat;
+            }
+            .icon_3{
+              background: url('./images/fresh10/list_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    &.tpl_5{
+      #search{
+        .links{
+          li{
+            .search-image{
+              background: url('./images/fresh10/profile_icon.png') left top/1.5em no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  *==== fresh10 edit form ====
+  */
+
+  #component-search-form{
+    .tpl-image{
+
+      @for $i from 1 through 5{
+        &.tpl_#{$i}{
+          background: url('/marionette/js/components/search/images/fresh10/tpl_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+    .theme-image{
+
+      @for $i from 1 through 4{
+        &.theme-#{$i}{
+          background: url('/marionette/js/components/search/images/fresh10/theme_#{$i}.png') left top / 310px no-repeat;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+/*
+*==== fresh style end====
+*/

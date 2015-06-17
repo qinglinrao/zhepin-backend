@@ -1,0 +1,160 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" >	
+  <title>Mcmore</title>
+  <link href="css/mainstyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="product"><!--  弹窗pop-open-->
+  <form>
+    <div class="search">
+      <div class="search-top">
+	<input type="text" class="name" placeholder="请输入订单编号或者商品名称"/ ><input type="submit" class="submit" value="查询" /><span class="more-filter">收起筛选条件</span> 
+      </div>
+      <div class="search-bottom">
+	 <div class="filter-list">
+	    <ul class="clearfix">
+	      <li>
+		<span>收货人</span><input type="text"  /> 
+	      </li>
+	      <li>
+		<span>手机号</span><input type="text"  /> 
+		
+	      </li>
+	      <li>
+		<span>下单时间</span><input type="text"  /><input type="text"  /> 
+	      </li>
+	      <li>
+		<span>库存</span><select>
+		  <option class="e-option" value ="1">1</option>
+		  <option class="e-option" value="2">2</option>
+		  <option class="e-option" value="3">3</option>
+		</select>
+		
+	      </li>
+	      <li>
+		<span>订单状态</span><select>
+		  <option class="e-option" value ="1">支付</option>
+		  <option class="e-option" value="2">未支付</option>
+		</select>
+	      </li>
+	      <li>
+		<span>收货地址</span><select>
+		  <option class="e-option" value ="1">所在省</option>
+		  <option class="e-option" value="2">女士</option>
+		  <option class="e-option" value="3">小姐</option>
+		</select><select>
+		  <option class="e-option" value ="1">所在市</option>
+		  <option class="e-option" value="2">女士</option>
+		  <option class="e-option" value="3">小姐</option>
+		</select>	
+	      </li>
+	    </ul>
+	 </div>
+      </div>
+    </div>
+  </form>
+  <div class="product-list-con">
+    <div class="form-pagelist clearfix">
+        <div class="pagelist-left">
+	     <a href="#">返回</a><a href="bulk-upload.html">添加商品</a><a href="#">移除</a> 
+        </div>
+        <div class="pagelist-right">
+          <a href="#">上一页</a><i>|</i><a href="#">下一页</a><i>第</i><select>
+                <option class="e-option" value ="1"><span>1</span>/<span>20</span></option>
+                <option class="e-option" value="2"><span>2</span>/<span>20</span></option>
+                <option class="e-option" value="3"><span>2</span>/<span>20</span></option>
+              </select>
+        </div>
+    </div>
+    <div class="product-folder-wrap">
+      <ul class="product-folder-list clearfix">
+	<li class="product-folder-item current">
+	  <div class="p-folder-img"><img src="images/product011.jpg" /></div>
+	  <div class="p-folder-word">
+	      <label for="all-choose" class="check "></label><input type="checkbox" id="all-choose" class="checkbox"/><span>商品标题</span>
+	  </div>
+	</li>
+	<li class="product-folder-item">
+	  <div class="p-folder-img"><img src="images/product022.jpg" /></div>
+	  <div class="p-folder-word">
+	      <label for="all-choose" class="check "></label><input type="checkbox" id="all-choose" class="checkbox"/><span>商品标题</span>
+	  </div>
+	</li>
+	<li class="product-folder-item ">
+	  <div class="p-folder-img"><img src="images/product011.jpg" /></div>
+	  <div class="p-folder-word">
+	      <label for="all-choose" class="check "></label><input type="checkbox" id="all-choose" class="checkbox"/><span>商品标题</span>
+	  </div>
+	</li>
+	<li class="product-folder-item">
+	  <div class="p-folder-img"><img src="images/product022.jpg" /></div>
+	  <div class="p-folder-word">
+	      <label for="all-choose" class="check "></label><input type="checkbox" id="all-choose" class="checkbox"/><span>商品标题</span>
+	  </div>
+	</li>
+	
+	
+      </ul>
+      
+      
+    </div>
+    <div class="all-pop">
+      <div class="pop-wrap">
+        <div class="pop-title">
+          <h3>移动到文件夹</h3>
+          <span class="p-close-icon"></span>
+        </div>
+        <div class="pop-con">
+          <div class="pop-con-list-wrap">
+            <ul class="pop-con-list clearfix">
+	      <li class="pop-con-item pop-con-item-first">
+                <a href="#" class="pop-con-link"><span>创建相册</span></a>
+                <span class="folder-ch-icon"></span>
+              </li> 
+              <li class="pop-con-item pop-i-current">
+                <a href="#" class="pop-con-link"><span>双11促销活动</span></a>
+                <span class="folder-ch-icon"></span>
+              </li>
+              <li class="pop-con-item ">
+                <a href="#" class="pop-con-link"><span>双11促销活动</span></a>
+                <span class="folder-ch-icon"></span>
+              </li>
+              <li class="pop-con-item ">
+                <a href="#" class="pop-con-link"><span>双11促销活动</span></a>
+                <span class="folder-ch-icon"></span>
+              </li>
+              <li class="pop-con-item ">
+                <a href="#" class="pop-con-link"><span>双11促销活动</span></a>
+                <span class="folder-ch-icon"></span>
+              </li>
+              <li class="pop-con-item ">
+                <a href="#" class="pop-con-link"><span>双11促销活动</span></a>
+                <span class="folder-ch-icon"></span>
+              </li> 
+            </ul> 
+          </div>
+          <div class="pop-bottom">
+              <input type="submit" class="button-style set-submit" value="移动"/>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+
+  </div>
+ 
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+
+})	
+</script>
+</body>
+</html>

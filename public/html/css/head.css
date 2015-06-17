@@ -1,0 +1,181 @@
+/* header */
+/* line 4, ../sass/head.scss */
+.header {
+  background-color: #2e2f30;
+  height: 100px;
+}
+
+/* line 8, ../sass/head.scss */
+.head-wrap {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/head.scss */
+.head-logo {
+  width: 165px;
+  float: left;
+}
+/* line 16, ../sass/head.scss */
+.head-logo a {
+  display: block;
+  width: 161px;
+  padding-top: 33px;
+}
+/* line 20, ../sass/head.scss */
+.head-logo a img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 26, ../sass/head.scss */
+.head-menu {
+  float: left;
+  padding-top: 45px;
+}
+/* line 30, ../sass/head.scss */
+.head-menu ul li {
+  float: left;
+  margin-left: 40px;
+}
+/* line 33, ../sass/head.scss */
+.head-menu ul li a {
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  font-size: 18px;
+  color: #9b9b9b;
+}
+/* line 39, ../sass/head.scss */
+.head-menu ul li a:hover {
+  color: #adc645;
+}
+/* line 42, ../sass/head.scss */
+.head-menu ul li a:hover .icon {
+  background: url("../images/icon/menu-icon-h.png") no-repeat 0 0;
+}
+/* line 45, ../sass/head.scss */
+.head-menu ul li a:hover .commodity-icon {
+  background-position: -31px 0;
+}
+/* line 48, ../sass/head.scss */
+.head-menu ul li a:hover .vip-icon {
+  background-position: -62px 0;
+}
+/* line 51, ../sass/head.scss */
+.head-menu ul li a:hover .activity-icon {
+  background-position: -93px 0;
+}
+/* line 54, ../sass/head.scss */
+.head-menu ul li a:hover .data-icon {
+  background-position: -124px 0;
+}
+/* line 57, ../sass/head.scss */
+.head-menu ul li a:hover .my-app-icon {
+  background-position: -155px 0;
+}
+/* line 60, ../sass/head.scss */
+.head-menu ul li a .icon {
+  display: inline-block;
+  width: 31px;
+  height: 27px;
+  background: url("../images/icon/menu-icon.png") no-repeat 0 0;
+  vertical-align: top;
+  margin-right: 6px;
+}
+/* line 68, ../sass/head.scss */
+.head-menu ul li a .commodity-icon {
+  background-position: -31px 0;
+}
+/* line 71, ../sass/head.scss */
+.head-menu ul li a .vip-icon {
+  background-position: -62px 0;
+}
+/* line 74, ../sass/head.scss */
+.head-menu ul li a .activity-icon {
+  background-position: -93px 0;
+}
+/* line 77, ../sass/head.scss */
+.head-menu ul li a .data-icon {
+  background-position: -124px 0;
+}
+/* line 80, ../sass/head.scss */
+.head-menu ul li a .my-app-icon {
+  background-position: -155px 0;
+}
+/* line 85, ../sass/head.scss */
+.head-menu ul li.current a {
+  color: #adc645;
+}
+/* line 87, ../sass/head.scss */
+.head-menu ul li.current a .icon {
+  background: url("../images/icon/menu-icon-h.png") no-repeat 0 0;
+}
+/* line 90, ../sass/head.scss */
+.head-menu ul li.current a .commodity-icon {
+  background-position: -31px 0;
+}
+/* line 93, ../sass/head.scss */
+.head-menu ul li.current a .vip-icon {
+  background-position: -62px 0;
+}
+/* line 96, ../sass/head.scss */
+.head-menu ul li.current a .activity-icon {
+  background-position: -93px 0;
+}
+/* line 99, ../sass/head.scss */
+.head-menu ul li.current a .data-icon {
+  background-position: -124px 0;
+}
+/* line 102, ../sass/head.scss */
+.head-menu ul li.current a .my-app-icon {
+  background-position: -155px 0;
+}
+
+/* line 113, ../sass/head.scss */
+.login-inf {
+  float: right;
+  padding-top: 30px;
+  line-height: 54px;
+}
+/* line 117, ../sass/head.scss */
+.login-inf .head-portrait {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  -webkit-border-radius: 54px;
+  -moz-border-radius: 54px;
+  -o-border-radius: 54px;
+  border-radius: 54px;
+}
+/* line 125, ../sass/head.scss */
+.login-inf .head-portrait img {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-border-radius: 54px;
+  -moz-border-radius: 54px;
+  -o-border-radius: 54px;
+  border-radius: 54px;
+}
+/* line 134, ../sass/head.scss */
+.login-inf .login-account {
+  display: inline-block;
+  height: 18px;
+  padding: 0 12px 0 12px;
+  line-height: 18px;
+  color: #9b9b9b;
+}
+/* line 140, ../sass/head.scss */
+.login-inf .login-account:hover {
+  color: #adc645;
+}
+/* line 144, ../sass/head.scss */
+.login-inf .drop-down {
+  display: inline-block;
+  height: 9px;
+  width: 14px;
+  background: url("../images/icon/drop-down-icon.png") no-repeat center;
+  cursor: pointer;
+}
+
+/* header end*/

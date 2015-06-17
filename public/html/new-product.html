@@ -1,0 +1,208 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" >	
+  <title>Mcmore</title>
+  <link href="css/mainstyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="release-product">
+  <div class="release-product-wrap">
+    <form>
+      <ul>
+        <li>
+            <h4 class="release-title">基本信息</h4>
+            <div class="release-con">
+                <div class="release-table">
+                  <table>
+                    <tbody>
+                      <tr><td class="td-title">商品类目：</td><td>服装>流行男装</td></tr>
+                      <tr><td class="td-title">商品类型：</td>
+                          <td><label fot="real-product" class="radio-style radio-choose" ></label><input type="radio" class="range-radio" id="real-product" name="product-type"/><span class="td-middle">实物商品<span class="declare">（物流发货）</span></span></td>
+                          <td><label fot="virtual-product" class="radio-style" ></label><input type="radio" class="range-radio" id="virtual-product" name="product-type" /><span class="td-middle">虚拟商品<span class="declare">（无需物流）</span></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h4 class="release-title">商品信息</h4>
+            <div class="release-con">
+                <div class="release-table">
+                  <table>
+                    <tbody>
+                      <tr><td class="td-title"><i class="red">*</i>商品标题：</td><td><input type="text" class="border-r product-title" /><a href="bulk-upload.html" class="importing-link">快速导入淘宝商品信息
+                                                                                                                              <div class="importing-form-wrap">
+                                                                                                                                  <span class="importing-form">
+                                                                                                                                    <input type="text" class="border-r importing-text" /><input type="submit" class="button-style submit-button"  value="提交"/><input type="button" class="button-style" value="取消" />  
+                                                                                                                                  </span>
+                                                                                                                              </div>
+                                                                                                                              </a></td></tr>
+                      <tr><td class="td-title"><i class="red">*</i>价格：</td><td><input type="text" class="border-r product-price" /><span class="price-icon">￥</span></td></td></tr>
+                      <tr><td class="td-title"><i class="red">*</i>商品图片：</td><td><span class="add-images"><img src="images/product02.jpg" /></span><a href="#" class="add-button"></a><td></tr>
+                      <tr><td class="td-title"></td><td><p class="p-word">建议尺寸：640 x 640 像素；您可以拖拽图片调整图片顺序。</p></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h4 class="release-title">规格／库存</h4>
+            <div class="release-con">
+                <div class="release-table">
+                  <table>
+                    <tbody>
+                      <tr><td class="td-title td-top">商品规格：</td><td class="td-top" ><input type="button" class="border-r add-parameter" value="添加规格参数"/>
+                                                                <div class="parameter-class">
+                                                                  <div class="color-class">
+                                                                      <p class="p-word">颜色分类</p>
+                                                                      <span class="close-icon"></span>
+                                                                      <div class="color-table">
+                                                                        <table>
+                                                                          <tbody>
+                                                                            <tr>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/brown.jpg" /></i><span class="color-name ">褐色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/red.jpg" /></i><span class="color-name ">红色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/green.jpg" /></i><span class="color-name ">绿色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/purple.jpg" /></i><span class="color-name ">紫色</span></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/brown.jpg" /></i><span class="color-name ">褐色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/red.jpg" /></i><span class="color-name ">红色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/green.jpg" /></i><span class="color-name ">绿色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/purple.jpg" /></i><span class="color-name ">紫色</span></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/brown.jpg" /></i><span class="color-name ">褐色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/red.jpg" /></i><span class="color-name ">红色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/green.jpg" /></i><span class="color-name ">绿色</span></td>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><i class="color-icon "><img src="images/purple.jpg" /></i><span class="color-name ">紫色</span></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><span class="color-name td-middle">全选</span></td>
+                                                                            </tr>
+                                                                          </tbody>
+                                                                        </table>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="parameter-middle"><input type="button" class="border-r add-parameter" value="添加规格参数"/><a class="parameter-link td-middle" href="#">管理商品规格模板</a></div>
+                                                                  <div class="size-class">
+                                                                    <div class="size-table">
+                                                                      <table class="level-one">
+                                                                        <thead>
+                                                                            <tr>
+                                                                              <th class="size-s">尺码</th>
+                                                                              <th>
+                                                                                  <table><thead><tr><th class="size-s">颜色</th><th class="size-s">花纹</th><th class="size-b"><i class="red">*</i>价格<input type="text" class="th-input" placeholder="批量输入" /></th><th class="size-b"><i class="red">*</i>数量<input type="text" class="th-input" placeholder="批量输入" /></th><th class="size-b">编码<input type="text" class="th-input" placeholder="批量输入" /></th></tr></thead></table>
+                                                                              </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                          <tr>
+                                                                              <td>37</td>
+                                                                              <td>
+                                                                                <table class="level-two" >
+                                                                                     <tbody>
+                                                                                         <tr class="border-first">
+                                                                                             <td class="size-s" >黑色</td>
+                                                                                             <td >
+                                                                                               <table class="level-three">
+                                                                                                 <tr class="border-first"><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                               </table>
+                                                                                             </td>
+                                                                                         </tr>
+                                                                                         <tr >
+                                                                                             <td class="size-s" >黑色</td>
+                                                                                             <td >
+                                                                                               <table class="level-three">
+                                                                                                 <tr class="border-first"><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                               </table>
+                                                                                             </td>
+                                                                                         </tr>
+                                                                                         <tr >
+                                                                                             <td class="size-s" >黑色</td>
+                                                                                             <td >
+                                                                                               <table class="level-three">
+                                                                                                 <tr class="border-first"><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                                 <tr ><td class="size-s">星星</td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td><td class="size-b" ><input type="text" class="th-input"  /></td></tr>
+                                                                                               </table>
+                                                                                             </td>
+                                                                                         </tr>
+                                                                                     </tbody>
+                                                                                </table>
+                                                                              </td>
+                                                                          </tr>        
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>   
+                                                              </td></tr>
+                      <tr><td class="td-title"><i>*</i>总库存：</td><td><input type="text" class="border-r " /></td></tr>
+                      <tr><td class="td-title">商品编码：</td><td><input type="text" class="border-r " /></td></tr>
+                      <tr><td class="td-title td-top">商品详情：</td><td class="td-top" ><input type="button" class="detail-button" value="商品描述模板"/><input type="button" class="detail-button detail-b-img" value="图片"/><input type="button" class=" detail-button detail-b-screen" value="全屏"/><input type="button" class="detail-button detail-b-open" value="展开"/></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </li>
+        <li>
+            <h4 class="release-title">物流／其他</h4>
+            <div class="release-con">
+                <div class="release-table">
+                  <table>
+                    <tbody>
+                      <tr><td class="td-title">商品类目：</td><td><label for="color" class="check "></label><input type="checkbox" id="color" class="checkbox"/><span class="td-middle">七天内退换货</span></td></tr>
+                      <tr><td class="td-title">物流信息：</td><td>
+                              <select class="border-r">
+                                <option class="e-option" value ="1">1</option>
+                                <option class="e-option" value="2">2</option>
+                                <option class="e-option" value="3">3</option>
+                              </select>
+                              <a href="order-logistics.html" class="new-freight-template">新建运费模版</a>
+                      </td></tr>
+                      <tr><td class="td-title">发票：</td>
+                          <td><label fot="invoice-yes" class="radio-style " ></label><input type="radio" class="range-radio" id="invoice-yes" name="invoice"/><span class="td-middle">有</span>
+                              <label fot="invoice-no" class="radio-style " ></label><input type="radio" class="range-radio" id="invoice-no" name="invoice"/><span class="td-middle">无</span>
+                          </td>
+                      </tr>
+                      <tr><td class="td-title td-top">库存计数：</td><td><div class="td-item td-top"><label fot="stock-none" class="radio-style" ></label><input type="radio" class="range-radio" id="stock-none" name="stock"/><span class="td-middle">拍下减库存</span><a href="#" class="stock-faq td-middle"></a></div>
+                                                                         <div class="td-item td-top"><label fot="stock-done" class="radio-style" ></label><input type="radio" class="range-radio" id="stock-done" name="stock"/><span class="td-middle">付款减库存</span><a href="#" class="stock-faq td-middle"></a></div>
+                      </td></tr>
+                      <tr><td class="td-title td-top">开始时刻：</td><td><div class="td-item td-top"><label fot="time-now" class="radio-style" ></label><input type="radio" class="range-radio" id="time-now" name="stock"/><span class="td-middle">立刻</span></div>
+                                                                         <div class="td-item td-top"><label fot="set-time" class="radio-style" ></label><input type="radio" class="range-radio" id="set-time" name="stock"/><span class="td-middle">设定时间</span><select class="border-r set-time-select">
+                                                                                                                                                                                                                                                                      <option class="e-option" value ="1">1</option>
+                                                                                                                                                                                                                                                                      <option class="e-option" value="2">2</option>
+                                                                                                                                                                                                                                                                      <option class="e-option" value="3">3</option>
+                                                                                                                                                                                                                                                                    </select></div>
+                                                                         <div class="td-item td-top"><label fot="to-stock" class="radio-style" ></label><input type="radio" class="range-radio" id="to-stock" name="stock"/><span class="td-middle">设放入仓库</span></div>
+                      </td></tr>
+                      <tr><td class="td-title"></td><td><input type="reset"  class="button-style cancel" value="取消"/><input type="submit" class="button-style set-submit" value="保存"/><input type="button" class="button-style release-button" value="发布"/></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </li>
+      </ul>
+      
+      
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+
+})	
+</script>
+</body>
+</html>

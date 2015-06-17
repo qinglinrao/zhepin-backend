@@ -1,0 +1,758 @@
+.component-mainmenu {
+  border-bottom: 1px solid #baa699;
+  background-color: #fff;
+  padding: 0 0.5em; }
+  .component-mainmenu .component-title.title-theme-1 {
+    padding: 0.1em 0.5em;
+    margin: 0.1em; }
+  .component-mainmenu .component-title.title-theme-2 {
+    padding: 0.1em 0.5em;
+    border-left: 0.25em solid #000;
+    margin: 0.1em; }
+  .component-mainmenu .iscroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    .component-mainmenu .iscroll-wrapper .more-left {
+      height: 2.15em;
+      width: 0.5em;
+      position: absolute;
+      left: 0px;
+      background: url("./images/more_left.png") left center/100% 80% no-repeat;
+      display: none; }
+    .component-mainmenu .iscroll-wrapper .more-right {
+      height: 2.15em;
+      width: 0.5em;
+      position: absolute;
+      right: 0px;
+      background: url("./images/more_right.png") left center/100% 80% no-repeat;
+      display: none; }
+    .component-mainmenu .iscroll-wrapper .scroll-content {
+      width: 10000px; }
+  .component-mainmenu .nav-item {
+    padding: 0 1em;
+    float: left;
+    text-align: center;
+    height: 2.15em;
+    overflow: hidden; }
+    .component-mainmenu .nav-item:first-child {
+      padding-left: 0.5em; }
+    .component-mainmenu .nav-item:last-child {
+      padding-right: 0.5em; }
+    .component-mainmenu .nav-item .nav-item-name {
+      text-align: center;
+      height: 2.1em;
+      line-height: 2.1em;
+      overflow: hidden;
+      position: relative;
+      color: #baa699; }
+      .component-mainmenu .nav-item .nav-item-name span {
+        font-size: 0.7em; }
+  .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+    color: #46939c;
+    border-bottom: 1px solid #46939c;
+    display: inline-block; }
+  .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+    color: #fff;
+    padding: 0.2em 0.7em;
+    border-radius: 1em;
+    background-color: #46939c; }
+  .component-mainmenu.theme-3 .nav-item {
+    border-color: #baa699;
+    background: url("./images/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+    .component-mainmenu.theme-3 .nav-item:last-child {
+      background: none; }
+  .component-mainmenu.theme-3 .active .nav-item-name {
+    color: #46939c; }
+  .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+    color: #46939c; }
+    .component-mainmenu.theme-4 .nav-item .active .nav-item-name span {
+      font-size: 0.8em; }
+
+/*
+* ==== edit form =====
+*/
+#component-mainmenu-form .sortable-field li {
+  padding: 5px;
+  border: 2px solid transparent;
+  position: relative; }
+  #component-mainmenu-form .sortable-field li:hover {
+    border-color: #30cab2; }
+  #component-mainmenu-form .sortable-field li .toggle-visible {
+    float: right;
+    margin-right: 50px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background: #7f7f7f;
+    padding: 0 5px;
+    cursor: pointer; }
+    #component-mainmenu-form .sortable-field li .toggle-visible.visible {
+      background-color: #30cab2; }
+  #component-mainmenu-form .sortable-field li .name-field {
+    border: 1px solid #cecccd;
+    padding: 0 10px; }
+#component-mainmenu-form .theme-image {
+  width: 340px;
+  height: 45px; }
+  #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/theme_1.png") left top/340px no-repeat; }
+  #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/theme_2.png") left top/340px no-repeat; }
+  #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/theme_3.png") left top/340px no-repeat; }
+  #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/theme_4.png") left top/340px no-repeat; }
+
+/*
+*==== cute style ====
+*/
+.cute-01 {
+  /*
+  * ==== cute01 edit form =====
+  */ }
+  .cute-01 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #fcdaf8; }
+    .cute-01 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-01 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #f84f92;
+      border-color: #f84f92; }
+    .cute-01 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #f84f92; }
+    .cute-01 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute01/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-01 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-01 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #f84f92; }
+    .cute-01 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #f84f92; }
+  .cute-01 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute01/theme_1.png") left top/340px no-repeat; }
+  .cute-01 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute01/theme_2.png") left top/340px no-repeat; }
+  .cute-01 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute01/theme_3.png") left top/340px no-repeat; }
+  .cute-01 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute01/theme_4.png") left top/340px no-repeat; }
+
+.cute-02 {
+  /*
+  * ==== cute02 edit form =====
+  */ }
+  .cute-02 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #fdb7c5; }
+    .cute-02 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-02 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #d2718a;
+      border-color: #d2718a; }
+    .cute-02 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #d2718a; }
+    .cute-02 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute02/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-02 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-02 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #d2718a; }
+    .cute-02 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #d2718a; }
+  .cute-02 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute02/theme_1.png") left top/340px no-repeat; }
+  .cute-02 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute02/theme_2.png") left top/340px no-repeat; }
+  .cute-02 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute02/theme_3.png") left top/340px no-repeat; }
+  .cute-02 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute02/theme_4.png") left top/340px no-repeat; }
+
+.cute-03 {
+  /*
+  * ==== cute03 edit form =====
+  */ }
+  .cute-03 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #fac7d4; }
+    .cute-03 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-03 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #ff74ab;
+      border-color: #ff74ab; }
+    .cute-03 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #ff74ab; }
+    .cute-03 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute03/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-03 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-03 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #ff74ab; }
+    .cute-03 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #ff74ab; }
+  .cute-03 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute03/theme_1.png") left top/340px no-repeat; }
+  .cute-03 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute03/theme_2.png") left top/340px no-repeat; }
+  .cute-03 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute03/theme_3.png") left top/340px no-repeat; }
+  .cute-03 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute03/theme_4.png") left top/340px no-repeat; }
+
+.cute-04 {
+  /*
+  * ==== cute04 edit form =====
+  */ }
+  .cute-04 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #c8e0df; }
+    .cute-04 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-04 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #96c7c7;
+      border-color: #96c7c7; }
+    .cute-04 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #96c7c7; }
+    .cute-04 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute04/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-04 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-04 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #96c7c7; }
+    .cute-04 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #96c7c7; }
+  .cute-04 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute04/theme_1.png") left top/340px no-repeat; }
+  .cute-04 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute04/theme_2.png") left top/340px no-repeat; }
+  .cute-04 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute04/theme_3.png") left top/340px no-repeat; }
+  .cute-04 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute04/theme_4.png") left top/340px no-repeat; }
+
+.cute-05 {
+  /*
+  * ==== cute05 edit form =====
+  */ }
+  .cute-05 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #fdd2c0; }
+    .cute-05 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-05 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #ffaa89;
+      border-color: #ffaa89; }
+    .cute-05 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #ffaa89; }
+    .cute-05 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute05/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-05 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-05 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #ffaa89; }
+    .cute-05 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #ffaa89; }
+  .cute-05 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute05/theme_1.png") left top/340px no-repeat; }
+  .cute-05 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute05/theme_2.png") left top/340px no-repeat; }
+  .cute-05 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute05/theme_3.png") left top/340px no-repeat; }
+  .cute-05 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute05/theme_4.png") left top/340px no-repeat; }
+
+.cute-06 {
+  /*
+  * ==== cute06 edit form =====
+  */ }
+  .cute-06 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #c6b58d; }
+    .cute-06 .component-mainmenu .nav-item .nav-item-name {
+      color: #ceb685; }
+    .cute-06 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #937023;
+      border-color: #937023; }
+    .cute-06 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #937023; }
+    .cute-06 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute06/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-06 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-06 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #937023; }
+    .cute-06 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #937023; }
+  .cute-06 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute06/theme_1.png") left top/340px no-repeat; }
+  .cute-06 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute06/theme_2.png") left top/340px no-repeat; }
+  .cute-06 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute06/theme_3.png") left top/340px no-repeat; }
+  .cute-06 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute06/theme_4.png") left top/340px no-repeat; }
+
+.cute-07 {
+  /*
+  * ==== cute07 edit form =====
+  */ }
+  .cute-07 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #d8e7b9; }
+    .cute-07 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-07 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #b6d57b;
+      border-color: #b6d57b; }
+    .cute-07 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #b6d57b; }
+    .cute-07 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute07/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-07 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-07 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #b6d57b; }
+    .cute-07 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #b6d57b; }
+  .cute-07 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute07/theme_1.png") left top/340px no-repeat; }
+  .cute-07 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute07/theme_2.png") left top/340px no-repeat; }
+  .cute-07 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute07/theme_3.png") left top/340px no-repeat; }
+  .cute-07 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute07/theme_4.png") left top/340px no-repeat; }
+
+.cute-08 {
+  /*
+  * ==== cute08 edit form =====
+  */ }
+  .cute-08 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #eec99c; }
+    .cute-08 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-08 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #d48427;
+      border-color: #d48427; }
+    .cute-08 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #d48427; }
+    .cute-08 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute08/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-08 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-08 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #d48427; }
+    .cute-08 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #d48427; }
+  .cute-08 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute08/theme_1.png") left top/340px no-repeat; }
+  .cute-08 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute08/theme_2.png") left top/340px no-repeat; }
+  .cute-08 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute08/theme_3.png") left top/340px no-repeat; }
+  .cute-08 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute08/theme_4.png") left top/340px no-repeat; }
+
+.cute-09 {
+  /*
+  * ==== cute09 edit form =====
+  */ }
+  .cute-09 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #f1b3b1; }
+    .cute-09 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-09 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #e86c6c;
+      border-color: #e86c6c; }
+    .cute-09 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #e86c6c; }
+    .cute-09 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute09/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-09 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-09 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #e86c6c; }
+    .cute-09 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #e86c6c; }
+  .cute-09 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute09/theme_1.png") left top/340px no-repeat; }
+  .cute-09 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute09/theme_2.png") left top/340px no-repeat; }
+  .cute-09 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute09/theme_3.png") left top/340px no-repeat; }
+  .cute-09 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute09/theme_4.png") left top/340px no-repeat; }
+
+.cute-10 {
+  /*
+  * ==== cute10 edit form =====
+  */ }
+  .cute-10 .component-mainmenu {
+    background-color: #fafaf7;
+    border-color: #fdfcff; }
+    .cute-10 .component-mainmenu .nav-item .nav-item-name {
+      color: #888888; }
+    .cute-10 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #a56afb;
+      border-color: #a56afb; }
+    .cute-10 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #a56afb; }
+    .cute-10 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/cute10/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .cute-10 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .cute-10 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #a56afb; }
+    .cute-10 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #a56afb; }
+  .cute-10 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/cute10/theme_1.png") left top/340px no-repeat; }
+  .cute-10 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/cute10/theme_2.png") left top/340px no-repeat; }
+  .cute-10 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/cute10/theme_3.png") left top/340px no-repeat; }
+  .cute-10 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/cute10/theme_4.png") left top/340px no-repeat; }
+
+/*
+*==== cute style end====
+*/
+/*
+*==== fresh style ====
+*/
+.fresh-01 {
+  /*
+  * ==== fresh01 edit form =====
+  */ }
+  .fresh-01 .component-mainmenu {
+    background-color: white;
+    border-color: #afcbde; }
+    .fresh-01 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-01 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #60b49d;
+      border-color: #60b49d; }
+    .fresh-01 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #60b49d; }
+    .fresh-01 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh01/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-01 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-01 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #60b49d; }
+    .fresh-01 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #60b49d; }
+  .fresh-01 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh01/theme_1.png") left top/340px no-repeat; }
+  .fresh-01 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh01/theme_2.png") left top/340px no-repeat; }
+  .fresh-01 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh01/theme_3.png") left top/340px no-repeat; }
+  .fresh-01 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh01/theme_4.png") left top/340px no-repeat; }
+
+.fresh-02 {
+  /*
+  * ==== fresh02 edit form =====
+  */ }
+  .fresh-02 .component-mainmenu {
+    background-color: white;
+    border-color: #ffc2c3; }
+    .fresh-02 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-02 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #fb939a;
+      border-color: #fb939a; }
+    .fresh-02 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #fb939a; }
+    .fresh-02 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh02/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-02 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-02 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #fb939a; }
+    .fresh-02 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #fb939a; }
+  .fresh-02 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh02/theme_1.png") left top/340px no-repeat; }
+  .fresh-02 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh02/theme_2.png") left top/340px no-repeat; }
+  .fresh-02 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh02/theme_3.png") left top/340px no-repeat; }
+  .fresh-02 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh02/theme_4.png") left top/340px no-repeat; }
+
+.fresh-03 {
+  /*
+  * ==== fresh03 edit form =====
+  */ }
+  .fresh-03 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-03 .component-mainmenu .nav-item .nav-item-name {
+      color: #cccccc; }
+    .fresh-03 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #19989f;
+      border-color: #19989f; }
+    .fresh-03 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #19989f; }
+    .fresh-03 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh03/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-03 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-03 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #19989f; }
+    .fresh-03 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #19989f; }
+  .fresh-03 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh03/theme_1.png") left top/340px no-repeat; }
+  .fresh-03 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh03/theme_2.png") left top/340px no-repeat; }
+  .fresh-03 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh03/theme_3.png") left top/340px no-repeat; }
+  .fresh-03 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh03/theme_4.png") left top/340px no-repeat; }
+
+.fresh-04 {
+  /*
+  * ==== fresh04 edit form =====
+  */ }
+  .fresh-04 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-04 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-04 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #97c8d6;
+      border-color: #97c8d6; }
+    .fresh-04 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #97c8d6; }
+    .fresh-04 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh04/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-04 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-04 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #97c8d6; }
+    .fresh-04 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #97c8d6; }
+  .fresh-04 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh04/theme_1.png") left top/340px no-repeat; }
+  .fresh-04 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh04/theme_2.png") left top/340px no-repeat; }
+  .fresh-04 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh04/theme_3.png") left top/340px no-repeat; }
+  .fresh-04 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh04/theme_4.png") left top/340px no-repeat; }
+
+.fresh-05 {
+  /*
+  * ==== fresh05 edit form =====
+  */ }
+  .fresh-05 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-05 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-05 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #a3bacd;
+      border-color: #a3bacd; }
+    .fresh-05 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #a3bacd; }
+    .fresh-05 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh05/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-05 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-05 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #a3bacd; }
+    .fresh-05 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #a3bacd; }
+  .fresh-05 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh05/theme_1.png") left top/340px no-repeat; }
+  .fresh-05 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh05/theme_2.png") left top/340px no-repeat; }
+  .fresh-05 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh05/theme_3.png") left top/340px no-repeat; }
+  .fresh-05 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh05/theme_4.png") left top/340px no-repeat; }
+
+.fresh-06 {
+  /*
+  * ==== fresh06 edit form =====
+  */ }
+  .fresh-06 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-06 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-06 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #a7a5b6;
+      border-color: #a7a5b6; }
+    .fresh-06 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #a7a5b6; }
+    .fresh-06 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh06/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-06 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-06 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #a7a5b6; }
+    .fresh-06 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #a7a5b6; }
+  .fresh-06 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh06/theme_1.png") left top/340px no-repeat; }
+  .fresh-06 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh06/theme_2.png") left top/340px no-repeat; }
+  .fresh-06 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh06/theme_3.png") left top/340px no-repeat; }
+  .fresh-06 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh06/theme_4.png") left top/340px no-repeat; }
+
+.fresh-07 {
+  /*
+  * ==== fresh07 edit form =====
+  */ }
+  .fresh-07 .component-mainmenu {
+    background-color: white;
+    border-color: #b2b2b2; }
+    .fresh-07 .component-mainmenu .nav-item .nav-item-name {
+      color: #cccccc; }
+    .fresh-07 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #949494;
+      border-color: #949494; }
+    .fresh-07 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #949494; }
+    .fresh-07 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh07/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-07 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-07 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #949494; }
+    .fresh-07 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #949494; }
+  .fresh-07 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh07/theme_1.png") left top/340px no-repeat; }
+  .fresh-07 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh07/theme_2.png") left top/340px no-repeat; }
+  .fresh-07 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh07/theme_3.png") left top/340px no-repeat; }
+  .fresh-07 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh07/theme_4.png") left top/340px no-repeat; }
+
+.fresh-08 {
+  /*
+  * ==== fresh08 edit form =====
+  */ }
+  .fresh-08 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-08 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-08 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #fa9090;
+      border-color: #fa9090; }
+    .fresh-08 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #fa9090; }
+    .fresh-08 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh08/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-08 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-08 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #fa9090; }
+    .fresh-08 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #fa9090; }
+  .fresh-08 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh08/theme_1.png") left top/340px no-repeat; }
+  .fresh-08 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh08/theme_2.png") left top/340px no-repeat; }
+  .fresh-08 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh08/theme_3.png") left top/340px no-repeat; }
+  .fresh-08 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh08/theme_4.png") left top/340px no-repeat; }
+
+.fresh-09 {
+  /*
+  * ==== fresh09 edit form =====
+  */ }
+  .fresh-09 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-09 .component-mainmenu .nav-item .nav-item-name {
+      color: #cccccc; }
+    .fresh-09 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #a5a5a5;
+      border-color: #a5a5a5; }
+    .fresh-09 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #a5a5a5; }
+    .fresh-09 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh09/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-09 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-09 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #a5a5a5; }
+    .fresh-09 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #a5a5a5; }
+  .fresh-09 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh09/theme_1.png") left top/340px no-repeat; }
+  .fresh-09 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh09/theme_2.png") left top/340px no-repeat; }
+  .fresh-09 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh09/theme_3.png") left top/340px no-repeat; }
+  .fresh-09 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh09/theme_4.png") left top/340px no-repeat; }
+
+.fresh-10 {
+  /*
+  * ==== fresh10 edit form =====
+  */ }
+  .fresh-10 .component-mainmenu {
+    background-color: white;
+    border-color: #d7d7d7; }
+    .fresh-10 .component-mainmenu .nav-item .nav-item-name {
+      color: #bababa; }
+    .fresh-10 .component-mainmenu.theme-1 .nav-item .active .nav-item-name {
+      color: #ff915a;
+      border-color: #ff915a; }
+    .fresh-10 .component-mainmenu.theme-2 .nav-item .active .nav-item-name span {
+      color: white;
+      background-color: #ff915a; }
+    .fresh-10 .component-mainmenu.theme-3 .nav-item {
+      background: url("./images/fresh10/mainmenu_line_bg.png") right center/1px 0.8em no-repeat; }
+      .fresh-10 .component-mainmenu.theme-3 .nav-item:last-child {
+        background: none; }
+    .fresh-10 .component-mainmenu.theme-3 .active .nav-item-name {
+      color: #ff915a; }
+    .fresh-10 .component-mainmenu.theme-4 .nav-item .active .nav-item-name {
+      color: #ff915a; }
+  .fresh-10 #component-mainmenu-form .theme-image.theme-1 {
+    background: url("/marionette/js/components/mainmenu/images/fresh10/theme_1.png") left top/340px no-repeat; }
+  .fresh-10 #component-mainmenu-form .theme-image.theme-2 {
+    background: url("/marionette/js/components/mainmenu/images/fresh10/theme_2.png") left top/340px no-repeat; }
+  .fresh-10 #component-mainmenu-form .theme-image.theme-3 {
+    background: url("/marionette/js/components/mainmenu/images/fresh10/theme_3.png") left top/340px no-repeat; }
+  .fresh-10 #component-mainmenu-form .theme-image.theme-4 {
+    background: url("/marionette/js/components/mainmenu/images/fresh10/theme_4.png") left top/340px no-repeat; }
+
+/*
+*==== fresh style end====
+*/
