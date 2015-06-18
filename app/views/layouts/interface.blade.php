@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>优理氏(米酷定制)后台管理</title>
+    <title>哲品后台管理</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/javascripts/bower_components/bootstrap/dist/css/bootstrap.css">
@@ -126,7 +126,9 @@
 {{ HTML::script('javascripts/services/product_folder.js') }}
 {{ HTML::script('javascripts/controllers/product.js') }}
 {{ HTML::script('javascripts/directives/parameter.js') }}
-{{ HTML::script('javascripts/sources.js') }}
+{{ HTML::script('javascripts/masonry.js') }}
+{{ HTML::script('javascripts/uploadPreview.js') }}
+
 
 
 

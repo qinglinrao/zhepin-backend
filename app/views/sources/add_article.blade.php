@@ -42,8 +42,8 @@
             </div>
             <div class="form-group">
                 <label class="form-label">正文</label>
-                {{ Umeditor::content('',['id'=>'myEditor','name'=>'source[content]']) }}
-                {{--{{Form::textarea('source[content]',null,['class'=>'form-textarea editor'])}}--}}
+                {{--{{ Umeditor::content('',['id'=>'myEditor','name'=>'source[content]']) }}--}}
+                {{Form::textarea('source[content]',null,['class'=>'form-textarea editor'])}}
             </div>
             <div class="form-group">
                 <input type="submit" value="保存"  class="form-submit">

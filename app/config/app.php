@@ -3,7 +3,7 @@
 return array(
 
     'verify_phone_time' => '10', //手机验证码有时间，单位 分钟
-    'image_domain'=> 'http://localhost:8090',
+    'image_domain'=> 'http://localhost',
     'upload_dir' => '/var/www/youlishi/public',
 
 	/*
@@ -135,6 +135,7 @@ return array(
 		'Intervention\Image\ImageServiceProvider',
 		'Jenssegers\Agent\AgentServiceProvider',
         'Maatwebsite\Excel\ExcelServiceProvider',
+        'Zhuzhichao\Umeditor\UmeditorServiceProvider',
 
 	),
 
@@ -210,6 +211,7 @@ return array(
 		'Agent'            => 'Jenssegers\Agent\Facades\Agent',
         'Carbon' 			=> 'Carbon\Carbon',
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Umeditor' => 'Zhuzhichao\Umeditor\Umeditor',
 
 	),
 
