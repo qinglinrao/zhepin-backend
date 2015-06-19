@@ -5724,7 +5724,7 @@ header {
   margin-bottom: 20px; }
   header .logo {
     float: left;
-    margin: 33px 45px 0 0; }
+    margin: 16px 45px 0 0; }
 
 .main-nav {
   float: left;
@@ -6668,6 +6668,7 @@ header {
 
 /* Page customer-level */
 .login-wrapper {
+    background-color:#b5b5b5 ;
   width: 30em;
   margin: 14em auto 0 auto; }
   .login-wrapper .am-alert-secondary {

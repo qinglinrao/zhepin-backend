@@ -3,7 +3,7 @@
 return array(
 
     'verify_phone_time' => '10', //手机验证码有时间，单位 分钟
-    'image_domain'=> 'http://localhost',
+    'image_domain'=> 'http://localhost:8000',
     'upload_dir' => '/var/www/youlishi/public',
 
 	/*

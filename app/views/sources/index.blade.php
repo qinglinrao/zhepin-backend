@@ -6,6 +6,7 @@
         new uploadPreview({ UpBtn: "upload-image-source-input", DivShow: "imageList",ImgClass:"imageclass",DivFile:"fileList",FileInput:"fileinput",FileName:"picture_file[]",MaxSize:10 });
     })
 </script>
+
 @stop
 
 @include('layouts.sidebar.profit')

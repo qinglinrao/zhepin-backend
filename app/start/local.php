@@ -198,9 +198,16 @@ function get_profit_templates(){
         0 => '--不分润--'
     );
     foreach($profits as $profit){
-        $templates[$profit->id] = $profit->name."(BA:$profit->ba%  门店:$profit->store%  代理商:$profit->agent%)";
+        $templates[$profit->id] = $profit->name."(代理商:$profit->ba%  店员:$profit->store%  门店:$profit->agent%)";
     }
     return $templates;
+}
+
+//解析html内容中的img标签
+function _analyseImgs($pageUrl,$contents){
+    $pattern="/<[img|IMG].*?src=[\'|\"](.*?)[\'|\"].*?[\/]?>/";
+    preg_match_all($pattern,$contents,$match);
+    return $match[0];
 }
 
 function get_merchant_status(){
@@ -230,9 +237,9 @@ function get_merchant_status_action($merchant){
 function get_follower_code_name($type){
     switch($type){
         case 1:
-            return '门店';
+            return '店员';
         case 2:
-            return 'BA';
+            return '消费者A';
         case 3:
             return '顾客';
     }
@@ -252,13 +259,13 @@ function get_follow_link_name($type,$sc){
     }
     switch($type){
         case 1:
-            return '代理商';
-            break;
-        case 2:
             return '门店';
             break;
+        case 2:
+            return '店员';
+            break;
         case 3:
-            return 'BA';
+            return '消费者A';
             break;
         case 4:
             return '顾客';

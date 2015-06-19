@@ -7,9 +7,9 @@
     <div class="select-sort">
         <ul>
             <li ><a href="{{URL::route('account_log')}}" class="button  {{!isset($type)?'button-primary':''}} button-rounded button-small" >全部</a></li>
-            <li ><a href="{{URL::route('account_log').'?type=1'}}" class="button {{ $type == 1?'button-primary':''}} button-rounded button-small">代理商</a></li>
-            <li ><a href="{{URL::route('account_log').'?type=2'}}" class="button {{ $type == 2?'button-primary':''}} button-rounded button-small">门店</a></li>
-            <li ><a href="{{URL::route('account_log').'?type=3'}}" class="button {{ $type == 3?'button-primary':''}} button-rounded button-small" >BA</a></li>
+            <li ><a href="{{URL::route('account_log').'?type=1'}}" class="button {{ $type == 1?'button-primary':''}} button-rounded button-small">门店</a></li>
+            <li ><a href="{{URL::route('account_log').'?type=2'}}" class="button {{ $type == 2?'button-primary':''}} button-rounded button-small">店员</a></li>
+            <li ><a href="{{URL::route('account_log').'?type=3'}}" class="button {{ $type == 3?'button-primary':''}} button-rounded button-small" >消费者A</a></li>
         </ul>
     </div>
     <div class="data-list">

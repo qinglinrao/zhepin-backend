@@ -3,13 +3,13 @@
   {{--<a class="setup-button" href="{{ URL::route('merchants.add') }}" >创建代理商</a>--}}
   <ul>
     <li class="{{ Active::path('profit/1/list') }}">
-      <a href="{{ URL::route('profit.merchants', ['type'=>'1']) }}">代理商</a>
+      <a href="{{ URL::route('profit.merchants', ['type'=>'1']) }}">门店</a>
     </li>
     <li class="{{ Active::path('profit/2/list') }}">
-      <a href="{{ URL::route('profit.merchants', ['type'=>'2']) }}">门店</a>
+      <a href="{{ URL::route('profit.merchants', ['type'=>'2']) }}">店员</a>
     </li>
     <li class="{{ Active::path('profit/3/list') }}">
-      <a href="{{ URL::route('profit.merchants', ['type'=>'3']) }}">BA</a>
+      <a href="{{ URL::route('profit.merchants', ['type'=>'3']) }}">消费者A</a>
     </li>
   </ul>
   <ul>

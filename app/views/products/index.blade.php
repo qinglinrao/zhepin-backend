@@ -45,7 +45,7 @@
                     </td>
                     <td>
                         <span class="price price-sale">￥{{ $product->sale_price }}</span><br/>
-                        <del class="price price-par">￥{{ $product->par_price }}</del>
+       {{--                 <del class="price price-par">￥{{ $product->par_price }}</del>--}}
                     </td>
                     <td>{{{ get_category_name($product) }}}</td>
                     <td>{{ $product->stock }}</td>

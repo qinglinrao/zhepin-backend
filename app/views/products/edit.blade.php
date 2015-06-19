@@ -71,7 +71,8 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+
+            <tr>{{-- <tr>
                 <th>商品推荐：</th>
                 <td>
                     <div class="input-group">
@@ -102,8 +103,7 @@
 
                     </div>
                 </td>
-            </tr>
-            <tr>
+            </tr>--}}
                 <th>分润配置：</th>
                 <td>
                     <div class="input-group">

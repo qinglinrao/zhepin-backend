@@ -105,13 +105,18 @@
     </div>
 </footer>
 
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 {{ HTML::script('javascripts/bower_components/lodash/dist/lodash.min.js') }}
 {{ HTML::script('javascripts/bower_components/jquery/dist/jquery.js') }}
 {{ HTML::script('javascripts/bower_components/ckeditor/ckeditor.js') }}
 {{ HTML::script('javascripts/bower_components/ckeditor/adapters/jquery.js') }}
-
+{{ HTML::script('javascripts/masonry.pkgd.min.js') }}
+{{ HTML::script('javascripts/uploadPreview.js') }}
 {{ HTML::script('javascripts/bower_components/datetimepicker/jquery.datetimepicker.js') }}
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
 {{ HTML::script('javascripts/bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js') }}
 {{ HTML::script('javascripts/bower_components/blueimp-file-upload/js/jquery.iframe-transport.js') }}
@@ -126,11 +131,9 @@
 {{ HTML::script('javascripts/services/product_folder.js') }}
 {{ HTML::script('javascripts/controllers/product.js') }}
 {{ HTML::script('javascripts/directives/parameter.js') }}
-{{ HTML::script('javascripts/masonry.js') }}
-{{ HTML::script('javascripts/uploadPreview.js') }}
 
 
-
+@yield('scripts')
 
 </body>
 </html>
